@@ -3,10 +3,10 @@ layout: assignment-two-column
 title: "JavaScript: Event Handlers"
 type: tutorial
 abbreviation: Tutorial 4
-draft: 1
+draft: 0
 points: 4
 num: 4
-due_date: 2023-02-03
+due_date: 2023-02-10
 ---
 
 <style>
@@ -19,9 +19,9 @@ due_date: 2023-02-03
 This tutorial is a practice quiz, and is intended to help you prepare for the quiz next Wednesday. A few notes:
 * You are strongly encouraged to start working on this tutorial before Friday, to get the most out of it.
 * To get credit for this tutorial, you must successfully complete at least half of the exercises below.
-* Please download the starter files and save them in your `csci185/tutorials` folder:
+* Please download the starter files and save them in your `csci344/tutorials` folder:
 
-<a href="/spring2023/course-files/tutorials/tutorial04.zip" class="nu-button">Download Tutorial Files <i class="fas fa-download"></i></a> <a href="/spring2023/course-files/tutorials/tutorial04_answers.zip" class="button">Solutions <i class="fas fa-download"></i></a>
+<a href="/spring2023/course-files/tutorials/tutorial04.zip" class="nu-button">Download Tutorial Files <i class="fas fa-download"></i></a> 
 
 ## Part 1: HTML & CSS
 In Part 1, you are going to build the webpage pictured below:
@@ -107,6 +107,6 @@ Specifically, you will:
 1. Ensure that each section has a different background color. 
 
 ## What to Submit
-Please commit and push your changes (like we've been doing in class for the past few weeks). Then, paste a link to your code repository (e.g., [https://github.com/vanwars/csci185-coursework](https://github.com/vanwars/csci185-coursework)) to the course Moodle under **Tutorial 4**.
+Please commit and push your changes (like we've been doing in class for the past few weeks). Then, paste a link to your code repository (e.g., [https://github.com/vanwars/csci344-coursework](https://github.com/vanwars/csci344-coursework)) to the course Moodle under **Tutorial 4**.
 
 * If for whatever reason you can't get your GitHub working, please zip your entire tutorial04 folder and submit it to Moodle under **Tutorial 4**.

@@ -1,15 +1,8 @@
 ---
 layout: module
-title: "Functions & Events"
+title: "Intro to Databases"
 type: module
 num: 9
-draft: 1
-due_date: 2023-03-20
+draft: 0
+due_date: 2023-03-27
 ---
-
-
-## Essential Questions
-
-## Lecture
-
-## Activities

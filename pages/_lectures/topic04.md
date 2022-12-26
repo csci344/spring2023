@@ -2,9 +2,10 @@
 layout: two-column
 title: Intro to JavaScript
 type: module
+prefix: topic
 num: 4
 draft: 0
-due_date: 2023-02-01
+due_date: 2023-02-06
 ---
 
 ## Day 1: Interacting with the DOM

@@ -1,15 +1,8 @@
 ---
 layout: module
-title: "Conditional Logic"
+title: "Building REST API Endpoints with Flask and SQLAlchemy"
 type: module
 num: 10
-draft: 1
-due_date: 2023-03-27
+draft: 0
+due_date: 2023-04-03
 ---
-
-
-## Essential Questions
-
-## Lecture
-
-## Activities

@@ -1,15 +1,8 @@
 ---
 layout: module
-title: "Web APIs"
+title: "Web Sockets & Chat"
 type: module
 num: 12
-draft: 1
-due_date: 2023-04-10
+draft: 0
+due_date: 2023-04-17
 ---
-
-
-## Essential Questions
-
-## Lecture
-
-## Activities

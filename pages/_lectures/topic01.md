@@ -2,6 +2,7 @@
 layout: two-column
 title: Intro to the Internet & the Web
 type: module
+prefix: topic
 num: 1
 draft: 0
 due_date: 2023-01-09

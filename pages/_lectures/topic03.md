@@ -2,9 +2,10 @@
 layout: two-column
 title: Intro to CSS
 type: module
+prefix: topic
 num: 3
 draft: 0
-due_date: 2023-01-23
+due_date: 2023-01-25
 ---
 
 ## Day 1: Intro to CSS
