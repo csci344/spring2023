@@ -1,0 +1,46 @@
+title: "CSCI 344: Spring 2023"
+subtitle: "Advanced Web Technology"
+email: vanwars@unca.edu
+baseurl: "/spring2023"
+term_start_date: "2023-01-09"
+term_end_date: "2023-05-03"
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+timezone: "America/New_York"
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+exclude: 
+  - _lectures/draft
+  - _assignments/draft
+  - course-files/administrative
+  - course-files/build
+  - course-files/exams
+  - course-files/homework/drafts
+  - course-files/tutorials/drafts
+  - course-files/lectures/drafts
+  - course-files/practice_exams/drafts
+  - course-files/projects/drafts
+collections:
+  assignments:
+    output: true
+    sort_by: ordering
+    permalink: /assignments/:name
+  lectures:
+    output: true
+    sort_by: lecture_date
+    permalink: /lectures/:name
+
+collections_dir: pages
+
+sass:
+  style: compact
+  sass_dir: _sass
+
+deadline_reminder: true
+
+
