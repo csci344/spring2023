@@ -5,7 +5,7 @@ title: "Practice Quiz 2: JavaScript"
 type: module
 draft: 0
 prefix: "Quiz Review Session"
-due_date: 2023-03-01
+due_date: 2023-02-27
 ---
 
 <style>
