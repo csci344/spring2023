@@ -1,6 +1,6 @@
 ---
 layout: module
-title: "Intro to Databases"
+title: "Intro to Databases & Object-Relational Mappings"
 type: module
 num: 9
 draft: 0
