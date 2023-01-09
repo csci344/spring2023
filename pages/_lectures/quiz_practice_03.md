@@ -2,8 +2,8 @@
 layout: two-column
 show_schedule: 1
 title: "Final Exam Review"
-type: module
-draft: 0
+type: practice_quiz
+draft: 1
 prefix: "Exam Review"
 due_date: 2023-04-24
 ---

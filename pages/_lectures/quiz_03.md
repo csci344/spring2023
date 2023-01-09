@@ -1,6 +1,6 @@
 ---
 layout: two-column
-title: "Quiz 3: Programming"
+title: "Quiz 3: Web Application Concepts"
 type: quiz
 draft: 1
 num: 3

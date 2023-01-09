@@ -3,7 +3,7 @@ layout: two-column
 show_schedule: 1
 title: "Quiz 1: HTML & CSS"
 type: quiz
-draft: 0
+draft: 1
 num: 1
 due_date: 2023-02-03
 # exercise_url: "quiz01.zip"

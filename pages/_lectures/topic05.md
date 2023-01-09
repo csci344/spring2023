@@ -3,7 +3,7 @@ layout: two-column
 title: "JavaScript: Loops, Templates, and Higher-Order Functions"
 type: module
 num: 5
-draft: 0
+draft: 1
 due_date: 2023-02-13
 ---
 

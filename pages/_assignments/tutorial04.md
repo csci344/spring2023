@@ -3,7 +3,7 @@ layout: assignment-two-column
 title: "JavaScript: Event Handlers"
 type: tutorial
 abbreviation: Tutorial 4
-draft: 0
+draft: 1
 points: 4
 num: 4
 due_date: 2023-02-10

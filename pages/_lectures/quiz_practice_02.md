@@ -2,8 +2,8 @@
 layout: two-column
 show_schedule: 1
 title: "Practice Quiz 2: JavaScript"
-type: module
-draft: 0
+type: practice_quiz
+draft: 1
 prefix: "Quiz Review Session"
 due_date: 2023-02-27
 ---

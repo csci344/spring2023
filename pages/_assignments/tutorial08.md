@@ -3,7 +3,7 @@ layout: assignment-two-column
 title: Introduction to React
 type: tutorial
 abbreviation: Tutorial 8
-draft: 0
+draft: 1
 points: 4
 num: 8
 due_date: 2023-03-17

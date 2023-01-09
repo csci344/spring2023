@@ -53,9 +53,9 @@ layout: default
             </tr>
         </thead>
         <tbody>
+        {% assign num = 0 %}
         {% for date in dates %}
             {% assign topic = site.lectures | where: 'due_date', date | where: 'type', 'module' | last %}
-
             {% assign holiday = site.lectures | where: 'due_date', date | where: 'type', 'holiday' | last %}
             {% assign lecture = main_listing | where: 'due_date', date | last %}
             <!-- Calculate the Week -->
@@ -65,8 +65,12 @@ layout: default
             {% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 | plus: 1 %}
             {% assign week = diffDays | divided_by: 7 | plus: 1 %}
             {% assign rowClass = "" %} 
+            {% assign prefix = None %}
+                        
             {% if topic %}
                 {% assign rowClass = "section" %}
+                {% assign num = num | plus : 1 %}
+                {% assign prefix = "Topic " | append: num %}
             {% endif %}
             {% if holiday %}
                 {% assign rowClass = "holiday" %}
@@ -89,11 +93,6 @@ layout: default
                     </td>
                     <td>
                         {% assign className = 'lec' %}
-                        {% assign prefix = lecture.prefix %}
-                        {% if prefix == None %}
-                            {% assign prefix = 'Topic' %}
-                        {% endif %} 
-                        {% assign prefix = prefix | append: " " | append: lecture.num %}
                         {% if lecture.type == 'review' or lecture.type == 'exam' or lecture.type == 'quiz'%}
                             {% assign className = 'quiz' %}
                             {% assign prefix = lecture.type  | append: " " | append: lecture.num %}

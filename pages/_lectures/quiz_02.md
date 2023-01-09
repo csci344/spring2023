@@ -1,6 +1,6 @@
 ---
 layout: two-column
-title: "Quiz: JavaScript"
+title: "Quiz 2: JavaScript"
 type: quiz
 draft: 1
 num: 2
