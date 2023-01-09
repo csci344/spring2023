@@ -29,11 +29,11 @@ Before we start building websites, let's take some time to understand how the In
 ## Slides
 Slides will be posted before class.
 
-<!-- 1. [Intro to the course](https://docs.google.com/presentation/d/1bv5W-6mrzdNo4b8jeH3iguevPYj1XW9Yq_gAxL7qIDo/edit?usp=sharing)
-2. [Intro to the Internet](https://docs.google.com/presentation/d/1I-XZ2XJ4uDS9wSbrKNYUxHIug7FkRtuj6ZPwZsycPYs/edit?usp=sharing) -->
+1. <a href="https://docs.google.com/presentation/d/1bv5W-6mrzdNo4b8jeH3iguevPYj1XW9Yq_gAxL7qIDo/edit?usp=sharing" target="_blank">Intro to the course</a>
+2. <a href="https://docs.google.com/presentation/d/1I-XZ2XJ4uDS9wSbrKNYUxHIug7FkRtuj6ZPwZsycPYs/edit?usp=sharing" target="_blank">Intro to the Internet</a>
 
 
 ## Activities
 * <a href="https://forms.gle/SxsV2EMcpnPxFEXn7" target="_blank">Pre-Course Questionnaire</a>
-* Human Bingo (analog activity)
+* Human Bingo (in-person activity)
 {:.compact}
