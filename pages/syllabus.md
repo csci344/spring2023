@@ -51,6 +51,14 @@ There will be 2 quizzes, which are intended to ensure that you understand the pr
 ### Final Exam (10%)
 There will be a cumulative final exam that will be administered during your regularly scheduled final exam slot.
 
+## Expectations
+* You will come to class prepared and ready to engage in an intellectual discussion about the readings and concepts.
+* You will complete all assignments on time and with interest, engagement, and intellectual curiosity.
+* You will bring your unique expertise, perspectives, and experiences to class and share them with others, so that we might all gain from your perspectives.
+* You will respect and seek to understand the unique perspectives and experiences of others.
+* You will give your classmates the benefit of the doubt (about their competence and intentions) and can expect the same from them.
+* All work that you submit will be your own original work; you will cite others’ work where appropriate.
+
 ## Course Materials & Resources
 
 ### Software
@@ -114,7 +122,7 @@ an A, 90-92.99 is an A-, 87-89.99 is a B+, etc. Some other logistics:
 > ### NOTE: Leniency is built into the course
 > * You can drop your lowest tutorial score. 
 > * You may miss **three** class sessions without your participation grade being affected.
-> * You may resubmit assigments with a 10% penalty.
+> * You may resubmit assignments with a 10% penalty.
 > * Your final exam score may replace one of your quiz scores.
 >
 > Use this leniency wisely. I will not grant additional exceptions unless the circumstances are exceptional, and this will need to be done in coordination with Dean of Student's office.
@@ -136,8 +144,8 @@ Tutorials will be graded according to the following scale (from 0-3 points):
 
 | 0pts | Not attempted | Assignment not submitted. |
 | 1pt | Check Minus | Assignment attempted but less than half of it was completed correctly. |
-| 2pts | Check | Most of the assigment was completed; works as expected. |
-| 3pts | Check Plus | Assigment completed. Works as expected. |
+| 2pts | Check | Most of the assignment was completed; works as expected. |
+| 3pts | Check Plus | assignment completed. Works as expected. |
 
 Tutorials are due by 11:59PM on Friday (but I recommend that you just submit them at the end of class). I **do not accept late tutorials** because I post the solutions right away.
 
