@@ -46,7 +46,7 @@ Most Fridays, we will complete a coding / design "tutorial." Tutorials are inten
 You will be given regular homework assignments that are intended to give you additional practice with the course ideas beyond the tutorials. They are each designed to take between 6-8 hours to complete, so leave yourself enough time!
 
 ### Quizzes (10%)
-There will be 3 quizzes, which are intended to ensure that you understand the programming and web-related concepts relevant to the course. Your final exam score can replace one of your quiz scores if you did poorly on a quiz.
+There will be 2 quizzes, which are intended to ensure that you understand the programming and web-related concepts relevant to the course. Your final exam score can replace one of your quiz scores if you did poorly on a quiz.
 
 ### Final Exam (10%)
 There will be a cumulative final exam that will be administered during your regularly scheduled final exam slot.
@@ -115,6 +115,7 @@ an A, 90-92.99 is an A-, 87-89.99 is a B+, etc. Some other logistics:
 > * You can drop your lowest tutorial score. 
 > * You may miss **three** class sessions without your participation grade being affected.
 > * You may resubmit assigments with a 10% penalty.
+> * Your final exam score may replace one of your quiz scores.
 >
 > Use this leniency wisely. I will not grant additional exceptions unless the circumstances are exceptional, and this will need to be done in coordination with Dean of Student's office.
 
@@ -141,7 +142,7 @@ Tutorials will be graded according to the following scale (from 0-3 points):
 Tutorials are due by 11:59PM on Friday (but I recommend that you just submit them at the end of class). I **do not accept late tutorials** because I post the solutions right away.
 
 ### Quizzes & Final Exam
-There will be 3 quizzes and one final exam over the course of the semester. The purpose of these assessments is to ensure that you understand the programming and design concepts that we have been studying.
+There will be 2 quizzes and one final exam over the course of the semester. The purpose of these assessments is to ensure that you understand the programming and design concepts that we have been studying.
 
 ### Regrading Policy
 I have been known to make the occasional grading error. If you have any grading questions/concerns, please email me within a week to resolve the issue.
