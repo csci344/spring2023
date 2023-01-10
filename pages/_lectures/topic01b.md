@@ -6,11 +6,13 @@ draft: 0
 due_date: 2023-01-11
 ---
 
-Why did the Internet take off so quickly? Why does it look the way it does? In other words, how does the Internet reflect the same desires, interests, and curiosities (and which ones)? Do the same systems of power that function "offline" function "online"?
+Why did the Internet take off so quickly? Why does it look the way it does? How does the Internet reflect the same desires, interests, and curiosities (and which ones) as our offline world? Do the same systems of power that function "offline" function "online"?
 
 ## Assigned Readings
 1. Watch: Black Mirror (Oct. 21, 2016). <a href="https://www.netflix.com/watch/80104627" target="_blank">Nosedive</a>, Season 3, Episode 1. Netflix.
     * If you don't have Netflix, you can purchase it for $1.99 on Amazon.
+    * Content warning: some profanity and lewd language
+2. If you do not want to watch Nosedive, please read Ahmed, Shazeda (May, 2019). <a href="https://logicmag.io/china/the-messy-truth-about-social-credit/" target="_blank">The Messy Truth About Social Credit (China)</a>. Logic Magazine.
 
 ## Discussion Questions
 
