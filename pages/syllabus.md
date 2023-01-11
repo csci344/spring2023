@@ -10,7 +10,6 @@ office_hours: "MWF 3:30pm - 4:30pm (in person), Rhoades Robinson Hall, Rm. 220"
 professor: "Dr. Sarah Van Wart (she/her)"
 section1: "MWF 2:00-3:15PM, Zeis Hall, Rm. 203"
 notes: "One year of programming experience is strongly recommended."
-include_schedule: 1
 ---
 
 <style>

@@ -11,15 +11,13 @@
             <a href="../assignments/">Assignments</a> > 
             {{page.abbreviation}}: {{ page.title }}
         </h1>
-    {% elsif page.show_schedule %}
+    {% elsif page.type == 'module' %}
         <h1>
-            <a href="../">Schedule</a> > {{ page.num }}. {{ page.title }}
+            <a href="../">Schedule</a> > {{ page.title }}
         </h1>
         <div class="subtitle">
             {% if page.due_date %}
-            Week {{ week }}: {{ page.due_date  | date: "%a, %b %-d" }}
-            {% else %}
-            Lab
+                Week {{ week }}: {{ page.due_date  | date: "%a, %b %-d" }}
             {% endif %}
         </div>
     {% elsif page.type == "lab" %}

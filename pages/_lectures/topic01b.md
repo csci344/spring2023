@@ -14,6 +14,9 @@ Why did the Internet take off so quickly? Why does it look the way it does? How 
     * Content warning: some profanity and lewd language
 2. If you do not want to watch Nosedive, please read Ahmed, Shazeda (May, 2019). <a href="https://logicmag.io/china/the-messy-truth-about-social-credit/" target="_blank">The Messy Truth About Social Credit (China)</a>. Logic Magazine.
 
+## Slides
+* <a href="https://docs.google.com/presentation/d/1EgbqAkA-qiJNz5d0ro8DO2nAth_IuLT8MD9uY6uh91A/edit?usp=sharing" target="_blank">The Internet & Society</a>
+
 ## Discussion Questions
 
 ### Nosedive
