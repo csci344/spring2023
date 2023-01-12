@@ -3,7 +3,7 @@ layout: assignment-two-column
 title: Linking Activity + GitHub Configuration
 type: tutorial
 draft: 0
-points: 4
+points: 6
 abbreviation: Tutorial 1
 num: 1
 description:

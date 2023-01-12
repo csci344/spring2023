@@ -4,7 +4,7 @@ title: Practice with CSS Layouts
 type: tutorial
 abbreviation: Tutorial 3
 draft: 1
-points: 4
+points: 6
 num: 3
 due_date: 2023-01-27
 ---

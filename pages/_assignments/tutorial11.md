@@ -4,7 +4,7 @@ title: "Configuring Your REST API"
 type: tutorial
 abbreviation: Tutorial 11
 draft: 1
-points: 4
+points: 6
 num: 11
 due_date: 2023-04-07
 ---

@@ -4,7 +4,7 @@ title: Exploring the HTML Reference
 type: tutorial
 abbreviation: Tutorial 2
 draft: 1
-points: 4
+points: 6
 num: 2
 due_date: 2023-01-20
 ---

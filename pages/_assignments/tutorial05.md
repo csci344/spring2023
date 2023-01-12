@@ -4,7 +4,7 @@ title: "JavaScript: Loops & Higher-Order Functions"
 type: tutorial
 abbreviation: Tutorial 5
 draft: 1
-points: 4
+points: 6
 num: 5
 due_date: 2023-02-17
 ---

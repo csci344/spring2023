@@ -4,7 +4,7 @@ title: "Authentication"
 type: tutorial
 abbreviation: Tutorial 12
 draft: 1
-points: 4
+points: 6
 num: 12
 due_date: 2023-04-14
 ---
