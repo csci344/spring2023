@@ -18,7 +18,7 @@ These resources (video and podcast) are for your reference (recommended, but not
 * Podcast (26 minutes): [The history and future of the cookie](https://www.npr.org/2022/11/18/1137657496/third-party-cookie-data-tracking-internet-user-privacy)
 
 ## Slides
-* Slides will be posted before class
+* <a href="https://docs.google.com/presentation/d/1O-uvoS2x4Qt5aG7_g7FJ9AtUH-gK0ZRGlmh4SD3TYaE/edit#slide=id.p" target="_blank">Tutorial 1: Background Information</a>
 
 ## Activities 
 1. [Analyze a website](https://docs.google.com/document/d/1l-Qni8hDy0Msze8vUu5w6lHZeqAoQSoPdxtVf-T_oFM/edit?usp=sharing)
