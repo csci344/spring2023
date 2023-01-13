@@ -25,14 +25,15 @@ In addition, all HTML files end with either the **.htm** or **.html** file exten
 For instance:
 ```html
 <h1>My Title</h1>
+<p>Some sentence</p>
 ```
-But some don't:
+But there are a few that don't:
 
 ```html
-Images: <img src="dog.png">
-Line Breaks:	<br>
-Horizontal Rules: <hr>
-Stylesheet Links: <link rel="stylesheet" href="my_style.css">
+Images: <img src="dog.png" alt="Photo of a Golden Retriever" />
+Line Breaks:	<br />
+Horizontal Rules: <hr />
+Stylesheet Links: <link rel="stylesheet" href="my_style.css" />
 ```
 
 You'll eventually figure out the rules as you continue building web pages. You can also consult the [HTML Reference](http://www.w3schools.com/html/default.asp) to learn more about the rules of each individual tag.
@@ -81,10 +82,10 @@ Instead, do this:
 </div>
 ```
 ## 5. Attribute syntax
-Attributes are always followed by an equals sign and values are surrounded by quotation marks. In the example below, **src** is the attribute, and **my_image** is the value. Note that **my_image** is surrounded by quotes.
+Attributes are always followed by an equals sign and values are surrounded by quotation marks. In the example below, **src** and **alt** are the attributes, and **"my_image.jpg"** and **"Photo of a flower"** are the values. Note that the values are surrounded by quotes.
 
 ```html
-<img src="my_image.jpg">
+<img src="my_image.jpg" alt="Photo of a flower" />
 ```
 
 ## 6. Last in, first out (LIFO)
@@ -120,6 +121,8 @@ Note that the phrase "Welcome section" is ignored by the browser, but is useful 
 </section>
 ```
 
+The comment format is: `<!--` your comment `-->`
+
 ## 8. Links to CSS files go inside the &lt;head&gt; tag
 In the HTML code block below, that the link to the style sheet is specified within the **&lt;head&gt;** tag:
 ```html
@@ -128,12 +131,12 @@ In the HTML code block below, that the link to the style sheet is specified with
     <head>
         <meta charset="utf-8">
         <title>My first web page</title>
-        <link rel="stylesheet" href="styles.css">
+        <!-- Link to your stylesheet inside the HEAD tag -->
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <!-- YOUR HTML CODE GOES INSIDE THE BODY TAG -->
         <h1>Welcome, Maria!</h1>
-        <img src="profile.png" alt="A profile picture">
+        <img src="profile.png" alt="A profile picture" />
     </body>
 </html>
 ```
@@ -147,12 +150,12 @@ In the HTML code block below (same as above), all of the visible content -- incl
     <head>
         <meta charset="utf-8">
         <title>My first web page</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <!-- YOUR HTML CODE GOES INSIDE THE BODY TAG -->
+        <!-- All visible content goes inside of the body tag -->
         <h1>Welcome, Maria!</h1>
-        <img src="profile.png" alt="A profile picture">
+        <img src="profile.png" alt="A profile picture" />
     </body>
 </html>
 ```

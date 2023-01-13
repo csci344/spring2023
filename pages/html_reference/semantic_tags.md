@@ -6,12 +6,7 @@ parent: HTML Resources
 permalink: /html-reference/semantic-tags/
 ---
 
-## Reference Videos & Readings
-* W3Schools Reference:
-  * [http://www.w3schools.com/html/html5_semantic_elements.asp](http://www.w3schools.com/html/html5_semantic_elements.asp)
-  * [http://www.w3schools.com/html/html_layout.asp](http://www.w3schools.com/html/html_layout.asp)
-
-Semantic elements clearly describe the purpose of the tag in the tag itself, and are new in HTML5. &lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;article&gt;, &lt;footer&gt;, &lt;aside&gt;, etc. are examples of semantic tags. Semantic tags are useful for grouping your page into logical sections that are easy for a screen reader or web crawler to interpret.
+Semantic elements both (a) clearly describe the purpose of the tag in the tag itself, and (b) help group content sections together. Examples of semantic tags include &lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;article&gt;, &lt;footer&gt;, &lt;aside&gt;, etc. Semantic tags are useful for grouping your page into logical sections that are easy for a screen reader or web crawler to interpret.
 
 ## Example 1: Simple
 ```
@@ -40,3 +35,10 @@ Semantic elements clearly describe the purpose of the tag in the tag itself, and
 |---------------------------------|
 ```
 <iframe src="//codepen.io/vanwars/embed/rLNPoq/?theme-id=18654&default-tab=html,result" allowfullscreen="true" class="codepen-frame"></iframe>
+
+
+
+> ## Reference Videos & Readings
+> W3Schools Reference:
+> * [http://www.w3schools.com/html/html5_semantic_elements.asp](http://www.w3schools.com/html/html5_semantic_elements.asp)
+> * [http://www.w3schools.com/html/html_layout.asp](http://www.w3schools.com/html/html_layout.asp)

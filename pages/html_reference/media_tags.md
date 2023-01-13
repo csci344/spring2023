@@ -6,9 +6,9 @@ parent: HTML Resources
 permalink: /html-reference/media-tags/
 ---
 
-In the previous section, we reviewed the simplest and most *frequently used* tags: `<h1>, <h2>...<h6>, <p>, <a>, <img>`
+In the previous sections, we reviewed the simplest and most *frequently used* tags: `<h1></h1>...<h6></h6>, <p></p>, <a></a>, <img />`
 
-In this section, we add to this list by including **iframes, audio files, videos, lists, and tables**. Below we provide a description of each element, as well as the tags, attributes, and values that generate them. Each element also has a corresponding code sample that you can continue exploring on your own.
+In this section, we add to this list by including **iframes, audio files, and videos**. Below we provide a description of each element, as well as the tags, attributes, and values that generate them. Each element also has a corresponding code sample that you can continue exploring on your own.
 
 ## IFrames
 Sample code to make an IFrame (to embed another web page).

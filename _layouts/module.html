@@ -4,12 +4,6 @@ show_outline: 1
 show_schedule: 1
 ---
 
-{{content}}
-
-<h2 id="do-now">Today's Activities</h2>
-<p>For today, please do the following:</p>
-{% assign num = 1 %}
-
 {% if page.exercise_url %}
     <h3 id="code">{{num}}. Download the Exercise Files</h3> 
     <a class="nu-button" href="{{site.baseurl}}/course-files/lectures/{{page.exercise_url}}" target="_blank">
@@ -19,9 +13,8 @@ show_schedule: 1
 {% endif %}
 
 
-
 {% if page.readings %}
-    <h3 id="readings">{{ num }}. Complete the Assigned Readings</h3>
+    <h2 id="readings">Readings</h2>
     {% include page_readings.html %} 
     {% assign num = num | plus: 1 %}
 {% endif %}
@@ -144,3 +137,5 @@ show_schedule: 1
         {% assign num = num | plus: 1 %}
     {% endfor %}
 {% endif %}
+
+{{content}}

@@ -14,7 +14,7 @@ HTML files control the content and structure of a web page. These files are text
 
 Source: <a href="https://goo.gl/bTo3n0" target="_blank">https://goo.gl/bTo3n0</a>
 
-As you begin writing your own HTML files, keep in mind that what you're really doing is writing *browser instructions* in one of the languages (HTML) a browser can understand. Therefore, you have to understand the *rules* and *vocabulary* of the language in order to create effective HTML browser instructions (files). In many ways, learning HTML is a lot like learning any other language, and is best learned "in context," and through practice – much like many language immersion programs (Spanish, Chinese, French, etc.) are taught.
+As you begin writing your own HTML files, keep in mind that what you're really doing is **writing browser instructions in one of the languages (HTML) a browser can understand**. Therefore, you have to understand the *rules* and *vocabulary* of the language in order to create effective HTML browser instructions (files). In many ways, learning HTML is a lot like learning any other language, and is best learned "in context," and through practice – much like many language immersion programs (Spanish, Chinese, French, etc.) are taught.
 
 Learning HTML requires three main kinds of knowledge:
 1. An understanding of the general rules for using the language, including understanding how to use ***tags***, ***attributes***, ***values***, and ***content*** (text and/or nested HTML tags) correctly. Think of these skills as **HTML grammar.**
@@ -34,4 +34,4 @@ After reviewing these grammar rules, please review the 7 sub-sections within thi
 1. [Semantic Tags](semantic-tags/)
 1. [Form Tags](forms/)
 
-Each of the HTML tag pages includes an interactive code sample that you are welcome to manipulate and incorporate into your own HTML files. Finally, at the end of each page, will be a list of additional resources that will help you get oriented with the larger web design and development community.
+Each of the HTML tag pages includes one or more interactive code samples that you are welcome to manipulate and incorporate into your own HTML files. Finally, at the end of each page, will be a list of additional resources that will help you get oriented with the larger web design and development community.
