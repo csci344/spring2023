@@ -1,23 +1,49 @@
 ---
-layout: two-column
-title: Intro to CSS
+layout: module
+title: Intro to HTML
 type: module
-prefix: topic
 num: 3
-draft: 1
-due_date: 2023-01-25
+draft: 0
+due_date: 2023-01-18
+readings:
+   - url: ../html-reference/
+     title: HTML Resources
+     internal: 1
+   - url: ../html-reference/rules-of-thumb/
+     title: Rules of Thumb
+     internal: 1
+   - url: ../html-reference/text-tags/
+     title: Text Markup Tags
+     internal: 1
+   - url: ../html-reference/links/
+     title: Hyperlinks
+     internal: 1
+   - url: ../html-reference/images/
+     title: Image Tags
+     internal: 1
+   - url: ../html-reference/media-tags/
+     title: Media Tags
+     internal: 1
+   - url: ../html-reference/compound-tags/
+     title: Compound Tags
+     internal: 1
+   - url: ../html-reference/forms/
+     title: Form Tags
+     internal: 1
+   - url: https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/
+     title: |
+       How Browsers Work: Behind the scenes of modern web browsers
+     author: "Tali Garsiel and Paul Irish"
+     optional: 1
+     source: https://www.html5rocks.com/
+     date: 2011
 ---
 
-## Day 1: Intro to CSS
-* Selectors & Basic Properties
-* Fonts, colors, box model
+## Slides
+1. <a href="https://docs.google.com/presentation/d/12WYA5s533mUD6tZOJw6KDkDb4otLQJhUIC_5V12Uu2I/edit?usp=sharing" target="_blank">Intro to HTML</a> (Wednesday, 01/18)
+1. Intro to semantic tags, more linking, GitHub crash course (Monday, 01/23)
 
-## Day 2: Layouts
-* CSS Grid
-* Flexbox
-* Responsive Design
+## Activities
+1. <a href="https://docs.google.com/document/d/1WcarSfoGJAqlcG0c-BLyKk6SoC8IIbBoTIpodAPG0HA/edit?usp=sharing" target="_blank">Write your first HTML page</a> (Wednesday, 01/18)
+2. Bakery Activity (Monday, 01/23)
 
-
-## Lab: Layouts Practice
-
-## Assigned: HW2: Make the Instagram Interface

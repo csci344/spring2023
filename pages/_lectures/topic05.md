@@ -1,25 +1,21 @@
 ---
 layout: two-column
-title: "JavaScript: Loops, Templates, and Higher-Order Functions"
+title: Intro to JavaScript
 type: module
-num: 5
+prefix: topic
+num: 4
 draft: 1
-due_date: 2023-02-13
+due_date: 2023-02-06
 ---
 
-## Day 1: JavaScript: Loops + Data (Objects & Arrays)
+## Day 1: Interacting with the DOM
+* Selector Methods
+* Events 
+* Functions
 
+## Day 2: Tour of the Language
+* Introduction to the Language
 
-## Day 2: JavaScript: Higher Order Functions
-
-
-## Lab: Loops Calisthenics
-* For loop practice
-* While loop practice
-* For ... Of practice
-* Map
-* ForEach
-* Reduce
-
-
-## Assigned: HW4: Instagram Interface: Part 1
+## Lab: 
+* Event Handlers (Theme Switcher, Hamburger Menu, Modal Window?)
+* Assigned: HW3: Event Handlers Activity. Photo Carousel

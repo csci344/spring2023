@@ -1,8 +1,8 @@
 ---
 layout: module
-title: "Web Sockets & Chat Apps"
+title: "Authentication with JWTs"
 type: module
-num: 12
+num: 11
 draft: 1
-due_date: 2023-04-17
+due_date: 2023-04-10
 ---

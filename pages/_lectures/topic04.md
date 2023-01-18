@@ -1,21 +1,23 @@
 ---
 layout: two-column
-title: Intro to JavaScript
+title: Intro to CSS
 type: module
 prefix: topic
-num: 4
+num: 3
 draft: 1
-due_date: 2023-02-06
+due_date: 2023-01-25
 ---
 
-## Day 1: Interacting with the DOM
-* Selector Methods
-* Events 
-* Functions
+## Day 1: Intro to CSS
+* Selectors & Basic Properties
+* Fonts, colors, box model
 
-## Day 2: Tour of the Language
-* Introduction to the Language
+## Day 2: Layouts
+* CSS Grid
+* Flexbox
+* Responsive Design
 
-## Lab: 
-* Event Handlers (Theme Switcher, Hamburger Menu, Modal Window?)
-* Assigned: HW3: Event Handlers Activity. Photo Carousel
+
+## Lab: Layouts Practice
+
+## Assigned: HW2: Make the Instagram Interface

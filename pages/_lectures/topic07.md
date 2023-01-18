@@ -1,15 +1,12 @@
 ---
 layout: module
-title: "Introduction to React"
+title: "Introduction to HTTP & the Fetch API"
 type: module
-num: 7
+num: 6
 draft: 1
-due_date: 2023-03-13
+due_date: 2023-02-20
 ---
 
-
-## Essential Questions
-
-## Lecture
-
-## Activities
+* Intro to HTTP & Various Web APIs
+* Intro to fetch and promises
+*   Activity: Yelp
