@@ -34,6 +34,10 @@ collections:
     output: true
     sort_by: lecture_date
     permalink: /lectures/:name
+  activities:
+    output: true
+    permalink: /activities/:name
+
 
 collections_dir: pages
 

@@ -41,9 +41,11 @@ readings:
 
 ## Slides
 1. <a href="https://docs.google.com/presentation/d/12WYA5s533mUD6tZOJw6KDkDb4otLQJhUIC_5V12Uu2I/edit?usp=sharing" target="_blank">Intro to HTML</a> (Wednesday, 01/18)
-1. Intro to semantic tags, more linking, GitHub crash course (Monday, 01/23)
+1. Intro to semantic tags, more linking, GitHub discussion (Monday, 01/23)
 
 ## Activities
 1. <a href="https://docs.google.com/document/d/1WcarSfoGJAqlcG0c-BLyKk6SoC8IIbBoTIpodAPG0HA/edit?usp=sharing" target="_blank">Write your first HTML page</a> (Wednesday, 01/18)
 2. Bakery Activity (Monday, 01/23)
+
+<!-- 3. GitHub Activity (Monday, 01/23) -->
 

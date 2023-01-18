@@ -1,6 +1,6 @@
 ---
 layout: assignment-two-column
-title: Make Your First Web Page
+title: Make Your First Website
 type: tutorial
 abbreviation: Tutorial 2
 draft: 0
@@ -34,7 +34,6 @@ csci344
     |   ...
     |
     |-- homework
-    │   |-- hw01
     │   |-- hw02
     |   ...
     |
@@ -202,8 +201,21 @@ While we have not yet covered CSS, try using Google and various online resources
 > * [color](/spring2023/css-reference/color/)
 > * [selectors](/spring2023/css-reference/selectors/)
 
-<!-- ## Reflection
-The purpose of this tutorial was to get you familiar with some HTML widgets and conventions. The HTML library is -->
+## Part 3. Publishing to GitHub
+Please [follow these instructions](../activities/github) to publish your tutorial02 to GitHub.
+
+
+## Reflection
+The purpose of this tutorial was to get you familiar with some HTML widgets and conventions. We will have **one more day** of HTML instruction and then we'll be moving on to CSS and JavaScript. What you should be comfortable with after the HTML unit:
+
+{:.compact}
+1. Finding online resources (like W3Schools) that help you learn about and integrate HTML tags.
+2. Understanding the rules of various tags, and how to nest them (if applicable).
+3. Understanding how to link files together using both relative and absolute paths.
+4. Semantic containers 
 
 ## What to turn in
-Please zip your entire tutorial02 folder (ask if you don’t know how to do this), and submit it to Moodle under **Tutorial 2**.
+Submit your lab to the Moodle under **Tutorial 2**
+
+* If you were able to publish your website to GitHub, paste a link to your GitHub pages and to your GitHub repo.
+* Otherwise, please zip your entire tutorial02 folder and upload it to Moodle under **Tutorial 2**.

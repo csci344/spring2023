@@ -12,8 +12,13 @@
             {{page.abbreviation}}: {{ page.title }}
         </h1>
     {% elsif page.type == 'module' %}
+
+        {% assign prefix = "" %}
+        {% if page.num %}
+            {% assign prefix = page.num | append: ". " %}
+        {% endif %}
         <h1>
-            <a href="../">Schedule</a> > {{ page.title }}
+            <a href="../">Schedule</a> > {{prefix}} {{ page.title }}
         </h1>
         <div class="subtitle">
             {% if page.due_date %}
