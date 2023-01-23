@@ -1,23 +1,61 @@
 ---
-layout: two-column
+layout: module
 title: Intro to CSS
 type: module
 prefix: topic
-num: 3
-draft: 1
+num: 4
+draft: 0
 due_date: 2023-01-25
+readings: 
+   - url: ../css-reference/rules-of-thumb/
+     title: "CSS Rules of Thumb"
+     internal: 1
+   - url: ../css-reference/selectors/
+     title: "Selectors"
+     internal: 1
+   - url: ../css-reference/color/
+     title: "Color"
+     internal: 1
+   - url: ../css-reference/fonts/
+     title: "Text & fonts"
+     internal: 1
+   - url: ../css-reference/box-model/
+     title: "The Box Model"
+     internal: 1
+   - url: ../css-reference/css-grid/
+     title: CSS Grid
+     internal: 1
+   - url: ../css-reference/media-queries/
+     title: Media Queries
+     internal: 1
+   - url: https://cssgridgarden.com/
+     title: "CSS Grid Garden"
+     notes: Please try to complete at least the first 10 levels
+   - url: https://flexboxfroggy.com/
+     title: Flexbox Froggy
+     notes: Please try to complete at least the first 10 levels
+   - url: https://university.webflow.com/lesson/flexbox-vs-grid
+     title: When to use Flex versus CSS Grid?
+     optional: 1
+   - url: https://css-tricks.com/snippets/css/complete-guide-grid/
+     title: "CSS Tricks: A Complete Guide to Grid"
+     optional: 1
+   - url: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+     optional: 1
+     title: "CSS Tricks: A Complete Guide to Flexbox"
+   - url: https://www.w3schools.com/css/css3_flexbox.asp
+     title: W3 Schools Flexbox Guide
+     optional: 1
+   - url: https://www.freecodecamp.org/news/learn-css-grid-by-building-5-layouts/
+     title: "Learn CSS Grid by Building 5 Layouts in 17 minutes"
+     optional: 1
 ---
 
-## Day 1: Intro to CSS
-* Selectors & Basic Properties
-* Fonts, colors, box model
-
-## Day 2: Layouts
-* CSS Grid
-* Flexbox
-* Responsive Design
 
 
-## Lab: Layouts Practice
+## Slides
+1. Lecture 4: <a href="https://docs.google.com/presentation/d/1d5-T2utz7_zPXku-nX50QW1bGWf4vYCgKItmSQBXYow/edit?usp=sharing" target="_blank">Intro to CSS</a> (Monday, 01/23)
+1. Lecture 5: CSS Layouts
 
-## Assigned: HW2: Make the Instagram Interface
+## Videos
+Videos will be published after class on <a href="https://drive.google.com/drive/folders/1b0RGogU8P2rKJAtcRpxMspHB919GUAXT?usp=sharing" target="_blank">Google Drive</a>.

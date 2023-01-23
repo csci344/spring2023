@@ -30,6 +30,9 @@ readings:
    - url: ../html-reference/forms/
      title: Form Tags
      internal: 1
+   - url: ../html-reference/semantic-tags/
+     title: Semantic Tags
+     internal: 1
    - url: https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/
      title: |
        How Browsers Work: Behind the scenes of modern web browsers
@@ -40,12 +43,10 @@ readings:
 ---
 
 ## Slides
-1. <a href="https://docs.google.com/presentation/d/12WYA5s533mUD6tZOJw6KDkDb4otLQJhUIC_5V12Uu2I/edit?usp=sharing" target="_blank">Intro to HTML</a> (Wednesday, 01/18)
-1. Intro to semantic tags, more linking, GitHub discussion (Monday, 01/23)
+1. Lecture 3: <a href="https://docs.google.com/presentation/d/12WYA5s533mUD6tZOJw6KDkDb4otLQJhUIC_5V12Uu2I/edit?usp=sharing" target="_blank">Intro to HTML</a> (Wednesday, 01/18)
+1. Lecture 4: <a href="https://docs.google.com/presentation/d/165uWV0UGuZ_lZ4ci0UCXxmoKDQb-lpv1gY2Q_XYaFA0/edit?usp=sharing" target="_blank">Intro to semantic tags, more linking</a> (Monday, 01/23)
 
 ## Activities
-1. <a href="https://docs.google.com/document/d/1WcarSfoGJAqlcG0c-BLyKk6SoC8IIbBoTIpodAPG0HA/edit?usp=sharing" target="_blank">Write your first HTML page</a> (Wednesday, 01/18)
-2. Bakery Activity (Monday, 01/23)
-
-<!-- 3. GitHub Activity (Monday, 01/23) -->
+1. Lecture 3: <a href="https://docs.google.com/document/d/1WcarSfoGJAqlcG0c-BLyKk6SoC8IIbBoTIpodAPG0HA/edit?usp=sharing" target="_blank">Write your first HTML page</a> (Wednesday, 01/18)
+2. Lecture 4: <a href="#" target="_blank">Linking Activity</a> (Monday, 01/23)
 
