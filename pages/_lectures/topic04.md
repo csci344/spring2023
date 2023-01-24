@@ -55,7 +55,11 @@ readings:
 
 ## Slides
 1. Lecture 4: <a href="https://docs.google.com/presentation/d/1d5-T2utz7_zPXku-nX50QW1bGWf4vYCgKItmSQBXYow/edit?usp=sharing" target="_blank">Intro to CSS</a> (Monday, 01/23)
-1. Lecture 5: CSS Layouts
+1. Lecture 5: <a href="https://docs.google.com/presentation/d/1BxcnJOclo4XIW40P8C07GUU-2Ga8rDvrRc6TompFC-Y/edit?usp=sharing" target="_blank">CSS Layouts</a> (Wednesday, 01/25)
+1. Lecture 6: Media Queries & CSS Wrap-Up (Monday, 01/30)
 
 ## Videos
 Videos will be published after class on <a href="https://drive.google.com/drive/folders/1b0RGogU8P2rKJAtcRpxMspHB919GUAXT?usp=sharing" target="_blank">Google Drive</a>.
+
+## Activities
+1. <a href="/spring2023/course-files/lectures/lecture05.zip">Lecture 5 files</a> (Wednesday, 01/25)
