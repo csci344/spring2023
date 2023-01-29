@@ -2,9 +2,10 @@
 layout: module
 title: "Introduction to HTTP & the Fetch API"
 type: module
-num: 6
+prefix: topic
+num: 7
 draft: 1
-due_date: 2023-02-20
+due_date: 2023-02-15
 ---
 
 * Intro to HTTP & Various Web APIs

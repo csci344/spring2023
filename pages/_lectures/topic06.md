@@ -1,25 +1,22 @@
 ---
 layout: two-column
-title: "JavaScript: Loops, Templates, and Higher-Order Functions"
+title: "JavaScript: Looping, Iteration, and Higher-Order Functions"
 type: module
-num: 5
+prefix: topic
+num: 6
 draft: 1
-due_date: 2023-02-13
+due_date: 2023-02-08
 ---
 
-## Day 1: JavaScript: Loops + Data (Objects & Arrays)
+## Readings
+TBD
+
+## Slides
+* Lecture 9: Looping, Iteration, and Higher-Order Functions (02/08 - 02/13)
 
 
-## Day 2: JavaScript: Higher Order Functions
+## Videos
+Videos will be published after class on <a href="https://drive.google.com/drive/folders/1b0RGogU8P2rKJAtcRpxMspHB919GUAXT?usp=sharing" target="_blank">Google Drive</a>.
 
-
-## Lab: Loops Calisthenics
-* For loop practice
-* While loop practice
-* For ... Of practice
-* Map
-* ForEach
-* Reduce
-
-
-## Assigned: HW4: Instagram Interface: Part 1
+## Activities
+Activities will be posted before class.

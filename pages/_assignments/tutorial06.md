@@ -1,14 +1,10 @@
 ---
 layout: assignment-two-column
-title: "JavaScript: Get Started with HW5"
+title: "JavaScript: Working with external data"
 type: tutorial
 abbreviation: Tutorial 6
 draft: 1
 points: 6
 num: 6
-due_date: 2023-02-24
+due_date: 2023-02-17
 ---
-
-* Authentication
-* Read-Only App Initialization
-* Modal Window

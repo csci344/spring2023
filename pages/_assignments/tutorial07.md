@@ -1,13 +1,14 @@
 ---
 layout: assignment-two-column
-title: "JavaScript: Get Started with HW6"
+title: "JavaScript: Get Started with HW5"
 type: tutorial
 abbreviation: Tutorial 7
 draft: 1
-points: 6
-num: 7
-due_date: 2023-03-03
+points: 7
+num: 6
+due_date: 2023-02-24
 ---
 
-* Post / Patch / Delete
-* Accessibility
+* Authentication
+* Read-Only App Initialization
+* Modal Window
