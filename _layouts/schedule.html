@@ -47,7 +47,7 @@ layout: default
         <thead>
             <tr>
                 <th>Week</th>
-                <th></th>
+                <th>Day</th>
                 <th>Topic</th>
                 <th>Due</th>
             </tr>
@@ -76,16 +76,15 @@ layout: default
                 {% assign rowClass = "holiday" %}
             {% endif %}
             <tr class="{{rowClass}}">
-                <th>
-                {% assign mod = diffDays | modulo: 7 %}
+                <td>
+                    <strong>
+                        {% assign mod = diffDays | modulo: 7 %}
 
-                {% if mod == 1 or mod == 0 %}
-                    Week {{week}}
-                {% endif %}
-                <span class="due-date">
-                    {{ date | date: "%m/%d/%y" }}
-                </span>
-                </th>
+                        {% if mod == 1 or mod == 0 %}
+                            Week {{week}}
+                        {% endif %}
+                    </strong>
+                </td>
                 {% if lecture %}
                     <!-- If lecture -->
                     <td> 
