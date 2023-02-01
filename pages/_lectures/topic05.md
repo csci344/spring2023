@@ -1,6 +1,6 @@
 ---
 layout: two-column
-title: Intro to JavaScript
+title: "Intro to JavaScript & DOM manipulation"
 type: module
 prefix: topic
 num: 5
@@ -29,14 +29,14 @@ due_date: 2023-02-01
 * <a href="https://www.digitalocean.com/community/tutorials/for-loops-for-of-loops-and-for-in-loops-in-javascript" target="_blank">For Loops, For...Of Loops and For...In Loops in JavaScript</a>. <em>Digital Ocean</em>
 
 ## Slides
-* Lecture 7: Intro to DOM Manipulation (Wednesday, 02/01)
+* Lecture 7: <a href="https://docs.google.com/presentation/d/1pwGXy43ajGQP8IynROyaLyaaNO7ZxlPZv9r5kEy-EoU/edit?usp=sharing" target="_blank">Intro to DOM Manipulation</a> (Wednesday, 02/01)
 * Lecture 8: Overview of the JavaScript language (Monday, 02/06)
 
 ## Videos
 Videos will be published after class on <a href="https://drive.google.com/drive/folders/1b0RGogU8P2rKJAtcRpxMspHB919GUAXT?usp=sharing" target="_blank">Google Drive</a>.
 
 ## Activities
-Activities will be posted before class.
+* Lecture 7 files: [DOM manipulation practice](/spring2023/course-files/lectures/lecture07.zip) (Wednesday, 02/01)
 
 <!-- 
 ## Day 1: Interacting with the DOM

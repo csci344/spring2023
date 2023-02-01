@@ -1,6 +1,6 @@
 ---
 layout: module
-title: "Introduction to HTTP & the Fetch API"
+title: "Introduction to HTTP & the JavaScript Fetch API"
 type: module
 prefix: topic
 num: 7
