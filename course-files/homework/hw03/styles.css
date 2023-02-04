@@ -1,0 +1,63 @@
+:root {
+    --button-size: 40px;
+}
+
+body > * {
+    box-sizing: border-box;
+}
+
+.carousel {
+    display: flex;
+    width: 60vw;  
+    margin: 0 auto;
+    overflow: hidden; 
+    border: solid 1px #CCC;
+    flex-direction: column;
+}
+
+.carousel-buttons {
+    position: relative;
+    z-index: 100;
+}
+
+.carousel-inner {
+    display: flex;
+    position: relative;
+    left: 0px;
+    width: 100%;
+    transition: left 0.3s ease-in;
+    margin-bottom: calc(-1 * var(--button-size));
+}
+
+.carousel-inner img {
+    width: 60vw;
+}
+.carousel-inner p {
+    padding: 10px;
+}
+
+.carousel-buttons {
+    flex-direction: row;
+}
+
+button {
+    display: flex;
+    background: none;
+    position: relative;
+    top: -25vw;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: var(--button-size);
+    height: var(--button-size);
+    justify-content: center;
+    align-items: center;
+}
+
+#back {
+    align-self: start;
+}
+
+#forward {
+    align-self: end;
+    margin-top: calc(-1 * var(--button-size));
+}
