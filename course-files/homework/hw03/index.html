@@ -10,13 +10,21 @@
     <title>Carousel</title>
 </head>
 <body>
-    <div class="carousel">
+    <h1>Your Carousel</h1>
+    <div class="carousel" aria-label="Photo Carousel">
+
         <div class="carousel-inner">
             <!-- Insert images here -->
-            This is currently an empty carousel. Replace with images & captions.
         </div> 
-        <button id="back" onclick="back()"><i class="fa-solid fa-chevron-left"></i></button>
-        <button id="forward" onclick="forward()"><i class="fa-solid fa-chevron-right"></i></button>
+
+        <button class="back" aria-label="Show previous slide">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <button class="forward" aria-label="Show next slide">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        
     </div>
     
 </body>

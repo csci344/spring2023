@@ -1,25 +1,30 @@
 :root {
     --button-size: 40px;
+    --item-width: 55vw; /* feel free to adjust (and also adjust in the javascript */
+    --button-offset: -23vw; /* feel free to adjust */
 }
 
 body > * {
     box-sizing: border-box;
 }
 
+h1, p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Window */
 .carousel {
     display: flex;
-    width: 60vw;  
+    width: var(--item-width);  
     margin: 0 auto;
     overflow: hidden; 
     border: solid 1px #CCC;
     flex-direction: column;
 }
 
-.carousel-buttons {
-    position: relative;
-    z-index: 100;
-}
 
+/* Inner Slider */
 .carousel-inner {
     display: flex;
     position: relative;
@@ -29,22 +34,19 @@ body > * {
     margin-bottom: calc(-1 * var(--button-size));
 }
 
-.carousel-inner img {
-    width: 60vw;
+/* Slide formatting */
+.slide img {
+    width: var(--item-width);
 }
-.carousel-inner p {
+.slide p {
     padding: 10px;
 }
 
-.carousel-buttons {
-    flex-direction: row;
-}
-
+/* button formatting */
 button {
     display: flex;
-    background: none;
     position: relative;
-    top: -25vw;
+    top: var(--button-offset);
     border: none;
     background-color: rgba(255, 255, 255, 0.5);
     width: var(--button-size);
@@ -53,11 +55,11 @@ button {
     align-items: center;
 }
 
-#back {
+.back {
     align-self: start;
 }
 
-#forward {
+.forward {
     align-self: end;
     margin-top: calc(-1 * var(--button-size));
 }
