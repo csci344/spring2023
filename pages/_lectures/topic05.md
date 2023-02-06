@@ -30,23 +30,11 @@ due_date: 2023-02-01
 
 ## Slides
 * Lecture 7: <a href="https://docs.google.com/presentation/d/1pwGXy43ajGQP8IynROyaLyaaNO7ZxlPZv9r5kEy-EoU/edit?usp=sharing" target="_blank">Intro to DOM Manipulation</a> (Wednesday, 02/01)
-* Lecture 8: Overview of the JavaScript language (Monday, 02/06)
+* Lecture 8: <a href="https://docs.google.com/presentation/d/1VNeVoT166YjiyUcnLVnn8Mo3Xw4NowtUT0YkKz2qxoY/edit?usp=sharing" target="_blank">JavaScript Primer</a> (Monday, 02/06)
 
 ## Videos
 Videos will be published after class on <a href="https://drive.google.com/drive/folders/1b0RGogU8P2rKJAtcRpxMspHB919GUAXT?usp=sharing" target="_blank">Google Drive</a>.
 
 ## Activities
 * Lecture 7 files: [DOM manipulation practice](/spring2023/course-files/lectures/lecture07.zip) (Wednesday, 02/01)
-
-<!-- 
-## Day 1: Interacting with the DOM
-* Selector Methods
-* Events 
-* Functions
-
-## Day 2: Tour of the Language
-* Introduction to the Language
-
-## Lab: 
-* Event Handlers (Theme Switcher, Hamburger Menu, Modal Window?)
-* Assigned: HW3: Event Handlers Activity. Photo Carousel -->
+* Lecture 8 files: [Intro to the language](/spring2023/course-files/lectures/lecture08.zip) (Monday, 02/06)
