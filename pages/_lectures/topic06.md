@@ -16,8 +16,10 @@ due_date: 2023-02-08
 ## Slides
 * Lecture 9: <a href="https://docs.google.com/presentation/d/1YijHKWI86pNWuObEfpC_TV-_0p-LJFTHX7tUfgdYJ7M/edit?usp=sharing" target="_blank">High-Order Functions (forEach, map, filter, reduce)</a> (02/08)
 
-## Videos
-Videos will be published after class on <a href="https://drive.google.com/drive/folders/1b0RGogU8P2rKJAtcRpxMspHB919GUAXT?usp=sharing" target="_blank">Google Drive</a>.
+## Videos & Lecture Files
+Videos and worked examples will be published after class:
+* <a href="https://drive.google.com/drive/folders/1b0RGogU8P2rKJAtcRpxMspHB919GUAXT?usp=sharing" target="_blank">Videos on Google Drive</a>
+* <a href="https://github.com/vanwars/csci344" target="_blank">Worked examples on GitHub</a>
 
 ## Activities
 * Lecture 9 files: [forEach, map, filter, reduce](/spring2023/course-files/lectures/lecture09.zip) (Wednesday, 02/08)

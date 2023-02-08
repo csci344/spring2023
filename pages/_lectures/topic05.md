@@ -32,8 +32,10 @@ due_date: 2023-02-01
 * Lecture 7: <a href="https://docs.google.com/presentation/d/1pwGXy43ajGQP8IynROyaLyaaNO7ZxlPZv9r5kEy-EoU/edit?usp=sharing" target="_blank">Intro to DOM Manipulation</a> (Wednesday, 02/01)
 * Lecture 8: <a href="https://docs.google.com/presentation/d/1VNeVoT166YjiyUcnLVnn8Mo3Xw4NowtUT0YkKz2qxoY/edit?usp=sharing" target="_blank">JavaScript Primer</a> (Monday, 02/06)
 
-## Videos
-Videos will be published after class on <a href="https://drive.google.com/drive/folders/1b0RGogU8P2rKJAtcRpxMspHB919GUAXT?usp=sharing" target="_blank">Google Drive</a>.
+## Videos & Lecture Files
+Videos and worked examples will be published after class:
+* <a href="https://drive.google.com/drive/folders/1b0RGogU8P2rKJAtcRpxMspHB919GUAXT?usp=sharing" target="_blank">Videos on Google Drive</a>
+* <a href="https://github.com/vanwars/csci344" target="_blank">Worked examples on GitHub</a>
 
 ## Activities
 * Lecture 7 files: [DOM manipulation practice](/spring2023/course-files/lectures/lecture07.zip) (Wednesday, 02/01)
