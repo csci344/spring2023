@@ -1,3 +1,5 @@
+const my_list = ['apple', 'orange', 'banana', 'mango', 'peach'];
+
 /*************************************/
 /* 1.a List's built-in foreach method */
 /*************************************/
@@ -29,7 +31,6 @@ console.log(square_nums);
 console.log('\nfilter method of list:');
 // The filter function applies a filtering function to each element of a list (which evaluates to true or false). 
 // It returns a new list with only those items where filtering function returned true.
-
 const nums_greater_than_2 = my_nums.filter(item => item > 2);
 console.log(nums_greater_than_2);
 
@@ -48,9 +49,15 @@ const sum_of_nums = my_nums.reduce((a, b) => a + b);
 console.log(sum_of_nums);
 
 
+const sum_of_nums_with_initial_value = my_nums.reduce((a, b) => a + b, 200);
+console.log(sum_of_nums_with_initial_value);
+
+
 /***********************/
 /* 5. Chaining Methods */
 /***********************/
+
+// first square all the numbers, then add them altogether:
 console.log('\nchaining list methods together:');
 const sum_of_squares = my_nums.map(
         item => item ** 2
