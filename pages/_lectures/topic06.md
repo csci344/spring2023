@@ -15,6 +15,7 @@ due_date: 2023-02-08
 
 ## Slides
 * Lecture 9: <a href="https://docs.google.com/presentation/d/1YijHKWI86pNWuObEfpC_TV-_0p-LJFTHX7tUfgdYJ7M/edit?usp=sharing" target="_blank">High-Order Functions (forEach, map, filter, reduce)</a> (02/08)
+* Lecture 10: Higher-Order Functions continued + advanced templates
 
 ## Videos & Lecture Files
 Videos and worked examples will be published after class:
