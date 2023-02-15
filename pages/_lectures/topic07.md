@@ -24,7 +24,7 @@ due_date: 2023-02-15
 
 
 ## Slides
-* Lecture 11: Intro to HTTP & Fetch
+* Lecture 11: <a href="https://docs.google.com/presentation/d/1CJkMkHYmM0INk4N-Qx5xr0lsw52xLJFcGmia1SvFhAU/edit?usp=sharing" target="_blank">Intro to HTTP & Fetch</a>
 * Lecture 12: JavaScript Promises
 
 ## Videos & Lecture Files
@@ -33,5 +33,5 @@ Videos and worked examples will be published after class:
 * <a href="https://github.com/vanwars/csci344" target="_blank">Worked examples on GitHub</a>
 
 ## Activities
-* Lecture 11 files: Fetch Examples
+* Lecture 11 files: [Fetch Examples](/spring2023/course-files/lectures/lecture11.zip) (Wednesday, 02/15)
 * Lecture 12 files: Examples of Promises
