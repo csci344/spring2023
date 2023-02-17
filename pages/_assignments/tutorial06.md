@@ -22,28 +22,30 @@ A few notes:
 ## API Endpoint Documentation & Examples
 
 ### Yelp
+
 {:.compact}
 * <a href="https://docs.developer.yelp.com/reference/v3_business_search" target="_blank" target="_blank">Documentation</a>
-* Actual Endpoint: **https://api.yelp.com/v3/businesses/search** (won't work unless you get an API key from Yelp and pass it as an HTTP header)
+* Actual Endpoint: **https://api.yelp.com/v3/businesses/search**<br>(won't work unless you get an API key from Yelp and pass it as an HTTP header)
 * Proxy Server
     * Endpoint: **https://www.apitutor.org/yelp/v3/businesses/search** (needs query parameters)
     * Example:  <a href="https://www.apitutor.org/yelp/v3/businesses/search?location=Asheville,+NC" target="_blank">https://www.apitutor.org/yelp/v3/businesses/search?location=Asheville,+NC</a>
     {:.compact}
-* Proxy Server Simplified Data
+* **[Recommended]** Proxy Server Simplified Data
     * Endpoint: **https://www.apitutor.org/yelp/simple/v3/businesses/search** (needs query parameters)
     * Example:  <a href="https://www.apitutor.org/yelp/simple/v3/businesses/search?location=Asheville,+NC" target="_blank">https://www.apitutor.org/yelp/simple/v3/businesses/search?location=Asheville,+NC</a>
     {:.compact}
 
 
 ### Spotify
+
 {:.compact}
 * <a href="https://developer.spotify.com/documentation/web-api/reference/#/operations/search" target="_blank">Documentation</a>
-* Actual Endpoint: **https://api.spotify.com/v1/search** (won't work unless you get an API key from Spotify and pass it as an HTTP header)
+* Actual Endpoint: **https://api.spotify.com/v1/search**<br>(won't work unless you get an API key from Spotify and pass it as an HTTP header)
 * Proxy Server
     * Endpoint: **https://www.apitutor.org/spotify/v1/search** (needs query parameters)
     * Example:  <a href="https://www.apitutor.org/spotify/v1/search?q=beyonce&type=track" target="_blank">https://www.apitutor.org/spotify/v1/search?q=beyonce&type=track</a>
     {:.compact}
-* Proxy Server Simplified Data
+* **[Recommended]** Proxy Server Simplified Data
     * Endpoint: **https://www.apitutor.org/spotify/simple/v1/search** (needs query parameters)
     * Example **Tracks** Query:<br><a href="https://www.apitutor.org/spotify/simple/v1/search?q=beyonce&type=track" target="_blank">https://www.apitutor.org/spotify/simple/v1/search?q=beyonce&type=track</a>
     * Example **Artists** Query:<br><a href="https://www.apitutor.org/spotify/simple/v1/search?q=beyonce&type=artist" target="_blank">https://www.apitutor.org/spotify/simple/v1/search?q=beyonce&type=artist</a>
@@ -51,13 +53,15 @@ A few notes:
     {:.compact}
 
 ### Twitter
+
+{:.compact}
 * <a href="https://developer.twitter.com/en/docs/twitter-api/v1/tweets/search/api-reference/get-search-tweets" target="_blank">Documentation</a>
-* Actual Endpoint: **https://api.twitter.com/1.1/search/tweets.json** (won't work unless you get an API key from Yelp and pass it as an HTTP header)
+* Actual Endpoint: **https://api.twitter.com/1.1/search/tweets.json**<br>(won't work unless you get an API key from Yelp and pass it as an HTTP header)
 * Proxy Server
     * Endpoint: **https://www.apitutor.org/twitter/1.1/search/tweets.json** (needs query parameters)
     * Example:  <a href="https://www.apitutor.org/twitter/1.1/search/tweets.json?q=cats" target="_blank">https://www.apitutor.org/twitter/1.1/search/tweets.json?q=cats</a>
     {:.compact}
-* Proxy Server Simplified Data
+* **[Recommended]** Proxy Server Simplified Data
     * Endpoint: **https://www.apitutor.org/twitter/simple/1.1/search/tweets.json** (needs query parameters)
     * Example:  <a href="https://www.apitutor.org/twitter/simple/1.1/search/tweets.json?q=cats" target="_blank">https://www.apitutor.org/twitter/simple/1.1/search/tweets.json?q=cats</a>
     {:.compact}
@@ -81,12 +85,23 @@ Please download the starter files below and then complete the following tasks:
 ### If you choose Yelp...
 If you choose Yelp, allow your user to input both a search `term` and a `location`.
 
+* Sample Query: <a href="https://www.apitutor.org/yelp/simple/v3/businesses/search?location=Asheville,%20NC&term=pizza" target="_blank">https://www.apitutor.org/yelp/simple/v3/businesses/search?location=Asheville,%20NC&term=pizza</a>
+* <a href="/spring2023/course-files/tutorials/tutorial06/answers/yelp/">Yelp Demo</a>
+
+
 ### If you choose Spotify...
 If you choose Spotify, allow your user to specify both a search term (`q` parameter) and a resource `type` (album, artist, or track).
+
 * Caveat: since each resource has a different data representation, you will have to create three different templates (depending on the resource). In other words, an `artist` object has a different data representation than an `album` object or a `track` object.
+* Sample Query: <a href="https://www.apitutor.org/spotify/simple/v1/search?q=beyonce&type=track" target="_blank">https://www.apitutor.org/spotify/simple/v1/search?q=beyonce&type=track</a>
+* <a href="/spring2023/course-files/tutorials/tutorial06/answers/spotify/">Spotify Demo</a>
 
 ### If you choose Twitter...
 If you choose Twitter, allow your user to specify both a search term (`q` parameter) and a `result_type` (mixed, recent, or popular).
+
+* Sample Query: <a href="https://www.apitutor.org/twitter/simple/1.1/search/tweets.json?q=cats&result_type=popular" target="_blank">https://www.apitutor.org/twitter/simple/1.1/search/tweets.json?q=cats&result_type=popular</a>
+* <a href="/spring2023/course-files/tutorials/tutorial06/answers/twitter/">Twitter Demo</a>
+
 
 ## What to Submit
 * A zip file of your completed Tutorial 6
