@@ -17,8 +17,7 @@ body * {
 
 .modal {
     width: 70vw;
-    height: auto;
-    max-height: 60vh;
+    height: 60vh;
     background-color: white;
     border-radius: 5px;
     display: flex;
@@ -36,18 +35,21 @@ body * {
 
 
 .modal-body {
-    overflow-y: auto;
+    margin-top: 30px;
     padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: 40vw auto;
+    column-gap: 20px;
+    align-items: center;
 }
 
 .modal-body img {
-    width: 40vw;
-    position: fixed;
+    width: 100%;
 }
 
 .the-comments {
-    margin-left: 40vw;
-    padding: 0 20px;
+    height: 50vh;
+    overflow-y: auto;
 }
 
 .row {

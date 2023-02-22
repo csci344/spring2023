@@ -1,3 +1,7 @@
+:root {
+    --modal-height: 70vh;
+}
+
 body * {
     box-sizing: border-box;
 }
@@ -17,7 +21,7 @@ body * {
 
 .modal {
     width: 70vw;
-    height: 60vh;
+    height: var(--modal-height);
     background-color: white;
     border-radius: 5px;
     display: flex;
@@ -35,10 +39,11 @@ body * {
 
 
 .modal-body {
+    margin-top: 30px;
     padding-bottom: 30px;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    height: 55vh
+    height: calc(var(--modal-height) - 10vh);
 }
 
 .image {

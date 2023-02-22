@@ -2,7 +2,7 @@ body * {
     box-sizing: border-box;
 }
 
-
+/* Modal background: blocks the screen from any accidental interactions */
 .modal-bg {
     background: rgba(50, 50, 50, 0.8);
     position: fixed;
@@ -15,6 +15,7 @@ body * {
     justify-content: center;
 }
 
+/* Actual modal */
 .modal {
     width: 70vw;
     height: auto;
@@ -31,6 +32,7 @@ body * {
     align-self: flex-end;
 }
 
+/* class that hides the modal by default */
 .hidden {
     display: none !important;
 }
