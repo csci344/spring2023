@@ -43,6 +43,4 @@ Videos and worked examples will be published after class:
 
 ## Activities
 * Lecture 11 files: [Fetch Examples](/spring2023/course-files/lectures/lecture11.zip) (Wednesday, 02/15)
-
-
-<!-- * Lecture 12 files: Modal Windows -->
+* Lecture 12 files: Modal Windows
