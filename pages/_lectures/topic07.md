@@ -22,11 +22,19 @@ due_date: 2023-02-15
 * <a href="https://dev.to/silvenleaf/fetch-api-easiest-explanation-part-3-4-put-by-silvenleaf-3oe8" target="_blank">fetch PUT examples</a>.<br>Note: PATCH works the same way as PUT. Recall that PATCH only updates specific attributes of a resource while PUT replaces the entire resource with a new version.
 * <a href="https://dev.to/silvenleaf/fetch-api-easiest-explanation-part-4-4-delete-by-silvenleaf-4376">fetch DELETE examples</a>.
 
+<!-- ## Promises
+* https://www.w3schools.com/js/js_promise.asp 
+* https://promisesaplus.com/#terminology -->
+
 
 ## Slides
 * Lecture 11: <a href="https://docs.google.com/presentation/d/1CJkMkHYmM0INk4N-Qx5xr0lsw52xLJFcGmia1SvFhAU/edit?usp=sharing" target="_blank">Intro to HTTP & Fetch</a>
 * Lecture 12: <a href="https://docs.google.com/presentation/d/1ymquHG5WCKCWI-gpBdrewQHwbYDlkycq8fSAXx9GdTs/edit?usp=sharing" target="_blank">Authentication Headers, GitHub Pages, Intro to HW4</a>
-* Lecture 13: JavaScript Promises
+* Lecture 13: HW4 tips, modal windows
+* Lecture 14: JavaScript Promises
+
+<!-- Use this lecture for promises: 
+https://cs396-web-dev.github.io/spring2021/lectures/lecture06 -->
 
 ## Videos & Lecture Files
 Videos and worked examples will be published after class:
@@ -35,4 +43,6 @@ Videos and worked examples will be published after class:
 
 ## Activities
 * Lecture 11 files: [Fetch Examples](/spring2023/course-files/lectures/lecture11.zip) (Wednesday, 02/15)
-* Lecture 12 files: Examples of Promises
+
+
+<!-- * Lecture 12 files: Modal Windows -->
