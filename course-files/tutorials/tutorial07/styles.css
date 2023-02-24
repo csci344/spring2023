@@ -19,7 +19,7 @@ main {
 
 #stories {
     display: flex;
-    column-gap: 10px;
+    column-gap: 20px;
     overflow: hidden;
     padding: 10px;
     border: solid 1px #CCC;
@@ -27,21 +27,32 @@ main {
     margin: 20px 0;
 }
 
-#stories section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#stories img {
-    border-radius: 50%;
-    width: 50px;
-}
-
 #stories, #posts {
     width: 80%;
     min-width: 500px;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.story img {
+    border-radius: 50%;
+    width: 50px;
+    border: solid 3px #DDD;
+}
+
+.story  p {
+    width: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    text-align: center;
+    font-size: 0.7em;
+    margin: 3px;
+    color: #999;
 }
 
 .post {
