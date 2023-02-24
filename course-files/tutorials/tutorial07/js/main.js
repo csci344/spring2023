@@ -128,7 +128,7 @@ const getAccessToken = async (rootURL, username, password) => {
  *     2. newHTML:  the HTML you want to replace
  */
 const targetElementAndReplace = (selector, newHTML) => { 
-	var div = document.createElement('div'); 
+	const div = document.createElement('div'); 
 	div.innerHTML = newHTML;
 	const newEl = div.firstElementChild; 
     const oldEl = document.querySelector(selector);

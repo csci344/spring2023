@@ -112,7 +112,7 @@ Then, complete the following tasks:
 1. If time, implement the accessibility features.
 
 
-## Tips
+## Hints, Tips, and Sample Code
 
 ### Bookmark Icons
 
@@ -165,6 +165,52 @@ const deleteBookmark = async () => {
     console.log(data);
 }
 ```
+
+
+### Replacing a DOM element with another DOM element
+Sarah has created a helper function called `` to make it easy for you to replace DOM elements (see below; already included in the starter files).
+
+```js
+const targetElementAndReplace = (selector, newHTML) => { 
+    const div = document.createElement('div'); 
+    div.innerHTML = newHTML;
+    const newEl = div.firstElementChild; 
+    const oldEl = document.querySelector(selector);
+    oldEl.parentElement.replaceChild(newEl, oldEl);
+}
+```
+
+If you want to replace an existing DOM element with a different one, here is an example of how you might use it:
+
+#### Before
+
+```html
+<main>
+    <div id="div1">Morning</div>
+    <div id="div2">Hello</div>
+    <div id="div3">Howdy</div>
+</main>
+```
+
+
+#### Invoke targetElementAndReplace
+
+```js
+targetElementAndReplace('#div2', <div id="div2_new">Goodbye</div>');
+```
+
+#### After
+
+```html
+<main>
+    <div id="div1">Morning</div>
+    <div id="div2_new">Goodbye</div>
+    <div id="div3">Howdy</div>
+</main>
+```
+
+
+
 
 ## What to Submit
 * A zip file of your completed Tutorial 7
