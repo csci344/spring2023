@@ -14,9 +14,12 @@ due_date: 2023-03-03
 ## How to Study
 
 * Review <a href="https://docs.google.com/document/d/1v1JE_TZTISmL9NeXYEOzdqDnJYmCjKVxrxHJK7N5QP4/edit?usp=sharing" target="_blank">Study Guide</a>, which contains a list of topics you will be expected to know.
+* Do the <a href="https://docs.google.com/document/d/1OP4HDSD6ob029bYwF6Js_4CZfmhYsoYu3egewsM1MrA/edit?usp=sharing" target="_blank">Practice Quiz 1</a>
+    * <a href="../course-files/practice-quizzes/quiz01.zip" target="_blank">Starter files for practice quiz</a>
 * Go over the tutorials and in-class exercises and make sure you understand the concepts and techniques used.
 * If it helps, review any relevant lecture videos (they are all posted)
 * As you complete HW4 and HW5, take a look at the study guide and make sure you understand how each concept in the study guide is working together to produce the desired result.
+
 
 ## The Actual Quiz
 The actual quiz will be posted to this page before class.
