@@ -31,7 +31,6 @@ due_date: 2023-02-15
 * Lecture 11: <a href="https://docs.google.com/presentation/d/1CJkMkHYmM0INk4N-Qx5xr0lsw52xLJFcGmia1SvFhAU/edit?usp=sharing" target="_blank">Intro to HTTP & Fetch</a>
 * Lecture 12: <a href="https://docs.google.com/presentation/d/1ymquHG5WCKCWI-gpBdrewQHwbYDlkycq8fSAXx9GdTs/edit?usp=sharing" target="_blank">Authentication Headers, GitHub Pages, Intro to HW4</a>
 * Lecture 13: <a href="https://docs.google.com/presentation/d/1yh52FPBvmWF5TOhhHMux1uStYqIZRn0aGrTaBm5b91Q/edit?usp=sharing" target="_blank">HW4 tips, modal windows</a>
-* Lecture 14: JavaScript Promises
 
 <!-- Use this lecture for promises: 
 https://cs396-web-dev.github.io/spring2021/lectures/lecture06 -->
