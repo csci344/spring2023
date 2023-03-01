@@ -15,6 +15,7 @@ due_date: 2023-02-27
 
 ## Slides
 * Lecture 14: [JavaScript Review](https://docs.google.com/presentation/d/1bIIpIa75dLl3ilk9pShTdcj69CU9113E4WF985qc3fI/edit?usp=sharing)
+* Lecture 15: [Last Minute JavaScript Questions](https://docs.google.com/presentation/d/1deKOQxR81_oI63Fs2ti_wyG3a6DJZW3bQBM4q91YiQg/edit?usp=sharing)
 
 ## Videos & Lecture Files
 Videos and worked examples will be published after class:
