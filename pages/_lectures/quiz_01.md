@@ -7,11 +7,11 @@ num: 1
 due_date: 2023-03-03
 ---
 
-<!-- {:.blockquote-no-margin}
+{:.blockquote-no-margin}
 > ## The Actual Quiz
 > 
 > * <a href="https://docs.google.com/document/d/1pkbpGeXpHoDW8ixaFpnYJxIZaWzpUI-tRk6T9jHhuvQ/edit?usp=sharing" target="_blank">Actual, Graded Quiz 1</a>
-> * [Quiz 1 Starter Files](../course-files/quizzes/quiz01.zip) -->
+> * [Quiz 1 Starter Files](../course-files/quizzes/quiz01.zip)
 
 
 ## Logistics
