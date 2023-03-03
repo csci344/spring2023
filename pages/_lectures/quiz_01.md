@@ -7,8 +7,18 @@ num: 1
 due_date: 2023-03-03
 ---
 
+{:.blockquote-no-margin}
+> ## The Actual Quiz
+> 
+> * <a href="https://docs.google.com/document/d/1pkbpGeXpHoDW8ixaFpnYJxIZaWzpUI-tRk6T9jHhuvQ/edit?usp=sharing" target="_blank">Actual, Graded Quiz 1</a>
+> * [Quiz 1 Starter Files](../course-files/quizzes/quiz01.zip)
+
+
+## Logistics
+
 * Quiz 1 will be completed during class on Friday, 3/3. It is due at the end of class.
-* You **MAY** use the course website, as well as any notes, lecture files, or internet reference materials to complete the quiz.
+* You **MAY** use the course website, as well as any notes, lecture files, or internet reference materials to complete the quiz. 
+* You may not use ChatGPT
 * You may not communicate in any way (via email, over Discord, etc.).
 
 ## How to Study
@@ -21,6 +31,3 @@ due_date: 2023-03-03
 * As you complete HW4 and HW5, take a look at the study guide and make sure you understand how each concept in the study guide is working together to produce the desired result.
 
 
-## The Actual Quiz
-The actual quiz will be posted to this page before class.
-     
