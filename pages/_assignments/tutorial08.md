@@ -2,10 +2,10 @@
 layout: assignment-two-column
 title: Introduction to React
 type: tutorial
-abbreviation: Tutorial 9
+abbreviation: Tutorial 8
 draft: 1
 points: 6
-num: 9
+num: 8
 due_date: 2023-03-17
 ---
 
@@ -41,6 +41,31 @@ due_date: 2023-03-17
     }
 </style>
 
+
+## New Instructions
+* Navigate to your tutorials directory
+* Create a react app on the command line as follows: `npx create-react-app tutorial08`
+* replace the entire `index.html` with this:
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Photo App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+<body>
+    <div id="root"></div>
+
+</body>
+</html>
+```
+
+
+
+
+
 <a class="nu-button" href="/spring2022/course-files/labs/lab10.zip">lab10.zip<i class="fas fa-download" aria-hidden="true"></i></a>
 
 {:.updates}
@@ -56,7 +81,7 @@ due_date: 2023-03-17
 
 
 > ## Required Readings
-> Before beginning this week's lab, please complete the <a href="https://reactjs.org/docs/hello-world.html" target="_blank">React Step-by-Step Guide</a>. It will take you and hour, but if you're new to React it's an hour well spent. It will be impossible for you to work effectively in React without understanding the core conventions and workflow, including:
+> Before beginning this week's tutorial, please complete the <a href="https://reactjs.org/docs/hello-world.html" target="_blank">React Step-by-Step Guide</a>. It will take you and hour, but if you're new to React it's an hour well spent. It will be impossible for you to work effectively in React without understanding the core conventions and workflow, including:
 
 {:.compact}
 > * <a href="https://reactjs.org/docs/introducing-jsx.html" target="_blank">JSX</a>
