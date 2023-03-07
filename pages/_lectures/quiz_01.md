@@ -7,12 +7,10 @@ num: 1
 due_date: 2023-03-03
 ---
 
-{:.blockquote-no-margin}
-> ## The Actual Quiz
-> 
-> * <a href="https://docs.google.com/document/d/1pkbpGeXpHoDW8ixaFpnYJxIZaWzpUI-tRk6T9jHhuvQ/edit?usp=sharing" target="_blank">Actual, Graded Quiz 1</a>
-> * [Quiz 1 Starter Files](../course-files/quizzes/quiz01.zip)
+## The Actual Quiz 
 
+<a href="https://docs.google.com/document/d/1pkbpGeXpHoDW8ixaFpnYJxIZaWzpUI-tRk6T9jHhuvQ/edit?usp=sharing" target="_blank" class="button">Actual, Graded Quiz 1 Instructions</a> <a href="/spring2023/course-files/quizzes/quiz01_answers.zip" class="nu-button">Quiz 01 Solutions <i class="fas fa-download"></i></a>
+ 
 
 ## Logistics
 
