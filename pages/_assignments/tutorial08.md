@@ -68,30 +68,14 @@ due_date: 2023-03-17
 
 <a class="nu-button" href="/spring2022/course-files/labs/lab10.zip">lab10.zip<i class="fas fa-download" aria-hidden="true"></i></a>
 
-{:.updates}
-> ## Update
-> Sarah has created a series of video walkthroughs if it helps! Just to manage expectations: this is not professional quality, and I confuse myself in Video #3!
->
-> {:.compact}
-> 1. <a href="https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=67e88877-0e78-4dd5-b3c0-aea60100d5cc" target="_blank">Introduction</a>
-> 1. <a href="https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0a822955-ad33-4a5f-842a-aea601059755" target="_blank">Component Hierarchy</a>
-> 1. <a href="https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f8e355ae-9dfb-4530-a015-aea601095939" target="_blank">NavBar & Posts Functionality</a> (this one's a little rough)
-> 1. <a href="https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=04303a30-2358-4c0e-a9f4-aea60112e0a4" target="_blank">Like / Unlike</a>
-> 1. <a href="https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1a15db53-229c-4c24-84ec-aea60118675e" target="_blank">Getting Components to Notify One Another</a>
 
 
-> ## Required Readings
-> Before beginning this week's tutorial, please complete the <a href="https://reactjs.org/docs/hello-world.html" target="_blank">React Step-by-Step Guide</a>. It will take you and hour, but if you're new to React it's an hour well spent. It will be impossible for you to work effectively in React without understanding the core conventions and workflow, including:
-
-{:.compact}
-> * <a href="https://reactjs.org/docs/introducing-jsx.html" target="_blank">JSX</a>
-> * <a href="https://reactjs.org/docs/components-and-props.html" target="_blank">Components and props</a>
-> * <a href="https://reactjs.org/docs/state-and-lifecycle.html" target="_blank">State and lifecycle</a>
-> * <a href="https://reactjs.org/docs/conditional-rendering.html" target="_blank">Conditional rendering</a>
-> * <a href="https://reactjs.org/docs/handling-events.html" target="_blank">Handling events</a>
-> * <a href="https://reactjs.org/docs/forms.html" target="_blank">Forms</a>
-> * <a href="https://reactjs.org/docs/lifting-state-up.html" target="_blank">Lifting up state</a>
-> * <a href="https://reactjs.org/docs/thinking-in-react.html" target="_blank">Thinking in React</a>
+> ## 1. Do the Readings
+> If you haven't take a look at these documents, carve out some time to do it.
+> * <a href="https://beta.reactjs.org/learn" target="_blank">Quick Start</a>
+> * <a href="https://beta.reactjs.org/learn/tutorial-tic-tac-toe" target="_blank">Tic Tac Toe</a>
+> * <a href="https://beta.reactjs.org/learn/thinking-in-react" target="_blank">Thinking in React</a>
+> * <a href="https://beta.reactjs.org/learn/sharing-state-between-components" target="_blank">Sharing state between components</a>
 
 ## Instructions
 In this week's lab, you will be re-implementing a subset of your Photo App UI using React. The following 5 tasks are required in order for you to get full credit for the lab:
@@ -182,7 +166,7 @@ One potential strategy (though there could certainly be others) might involve sp
 
 Note that each of these top-level components may also have sub-components. For instance, `Posts` will probably be comprised of `Post` components, and each `Post` component will be comprised of, say, `Comments`, a `LikeButton`, a `BookmarkButton`, and potentially others. Here's one way of visualizing this heirarchy:
 
-<img style="width:100%;margin:20px 0px;" src="/spring2022/assets/images/homework/hw06/react-diagram.svg" />
+<img style="width:100%;margin:20px 0px;" src="/spring2023/assets/images/tutorials/tutorial08/react-diagram.svg" />
 
 
 Think about what your `render()` function might look like for each component, and which of your components might issue fetch requests.

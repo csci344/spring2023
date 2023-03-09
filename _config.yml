@@ -15,6 +15,10 @@ theme: minima
 plugins:
   - jekyll-feed
 exclude: 
+  - course-files/tutorials/tutorial08/solutions/node_modules*
+  - course-files/tutorials/tutorial08/node_modules*
+  - course-files/homework/hw06/solutions/node_modules*
+  - course-files/homework/hw06/node_modules*
   - _lectures/draft
   - _assignments/draft
   - course-files/administrative
