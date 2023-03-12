@@ -42,7 +42,8 @@ due_date: 2023-03-17
 </style>
 
 > ## 1. Do the Readings
-> If you haven't take a look at these documents, carve out some time to do it.
+> If you haven't yet taken a look at these documents, carve out some time to do it. They're important.
+>
 > * <a href="https://beta.reactjs.org/learn" target="_blank">Quick Start</a>
 > * <a href="https://beta.reactjs.org/learn/tutorial-tic-tac-toe" target="_blank">Tic Tac Toe</a>
 > * <a href="https://beta.reactjs.org/learn/thinking-in-react" target="_blank">Thinking in React</a>
@@ -56,16 +57,17 @@ due_date: 2023-03-17
 * Download the starter files and save them in your `csci344/tutorials` folder.
 * On your terminal / command line, navigate to `csci344/tutorials/tutorial08` folder.
 * Install the Node.js dependencies using `npm install`
+* Finally, run your React app by typing `npm start`
 
 ### Deployment Notes
 Although we are using Node to build and run our React app, we will ultimately be compiling our React app to HTML, CSS, and JavaScript so that the browser can download these files from our website and run them client-side. It's confusing, but the final output of our React App is client-side code that our browser will run.
 * Try building your React App by issuing `npm run build` on the command line. The resulting build folder will have "vanilla" HTML, CSS, and JavaScript that your browser understands.
 
 ### A few things to notice
-Before you start coding, I wanted to bring your attention to some features of your code:
+Before you start coding, please take a look at the following:
 
 #### 1. Proxy URL
-Open `package.json` and note that there is a property called `proxy` which is set to <a href="https://photo-app-secured.herokuapp.com/" target="_blank">https://photo-app-secured.herokuapp.com/</a>. What this means is that in each of your fetch endpoints, you don't need to specify the fully qualified path. For instance, if you want to query for a list of Post objects, you only need to specify this address: `/api/posts`.
+`package.json` is a configuration file used by Node.js. It specifies rules for which packages dependencies should be installed (read via the `npm install`). It also has some speficications for how the application should behave. One of these is a property called `proxy`, which is set to <a href="https://photo-app-secured.herokuapp.com/" target="_blank">https://photo-app-secured.herokuapp.com/</a>. What this means is that in each of your fetch endpoints, you don't need to specify the fully qualified path. For instance, if you want to query for a list of Post objects, you only need to specify this address: `/api/posts`.
 
 #### 2. public/index.html
 Your base HTML file is located in the `public` folder. Take a look at it, noting how simple it is:
@@ -85,8 +87,8 @@ Your base HTML file is located in the `public` folder. Take a look at it, noting
 </html>
 ```
 
-#### 3. src/index.js "kicks off" your web app
-Open `src/index.js` and take a look at it. Note that the `renderApp()` function is invoked at the bottom. The function first authenticates to the <a href="https://photo-app-secured.herokuapp.com/" target="_blank">https://photo-app-secured.herokuapp.com/</a> server with the `webdev/password` (you should switch this to your username and password). Then, it passes the authentication token as an argument to the `<App />` component, which is inserted within the `#root` DOM element.
+#### 3. src/index.js
+`src/index.js` "kicks off" your web app. Ope it and take a look at it. Note that the `renderApp()` function is invoked at the bottom. The function first authenticates to the <a href="https://photo-app-secured.herokuapp.com/" target="_blank">https://photo-app-secured.herokuapp.com/</a> server with the `webdev/password` (you should switch this to your username and password). Then, it passes the authentication token as an argument to the `<App />` component. This component is then added to the DOM (located in the `public/index.html` file) within `#root` DOM element.
 
 ```jsx
 import React from 'react';
@@ -108,8 +110,8 @@ async function renderApp() {
 renderApp();
 ```
 
-#### 3. src/App.js is your top-level React component
-Open `src/App.js` and take a look at it. You should see a structure like the one shown below. Your job is to create components for each of the data-generated sections of your app (we will walk through this process together).
+#### 3. src/App.js
+`src/App.js` is your top-level React component. Open it and take a look at it. You should see a structure like the one shown below. Your first and second tasks are to create components for each of the data-generated sections of your app (we will walk through this process together).
 
 ```jsx
 import React from 'react';
@@ -160,16 +162,11 @@ export default function App ({token}) {
 ```
 
 
-
-
-
-
-
 ## 3. Your Tasks
 In this week's lab, you will begin HW6 (re-implementing the Photo App UI using React). To get full credit for this lab, complete the following tasks:
 
 {:.compact}
-1. [Create a component hierarchy](#step1)
+1. [Create a component hierarchy](#step1) (we will walk through this together)
 1. [Create stubs for each component](#step2)
 1. [Implement the "Posts" and "Post" components](#step3)
 1. [Implement the "LikeButton" component](#step4)
@@ -188,18 +185,24 @@ Given (a) the starter `App.js` file we have given you and (b) what you already k
 | 4. | **Stories component** | Responsible for displaying recent stories of people you're following. | 
 | 5. | **Posts component** | Responsible for displaying the posts in your news feed. | 
 
-Note that each of these top-level components may also have sub-components. For instance:
+Note that each of these 5 top-level components may also have sub-components. For instance:
 * `Posts` will probably be comprised of one or more `Post` components
 * Each `Post` component will be comprised of, say, an `AddComment` component, a `LikeButton`, a `BookmarkButton`, and potentially others. Here's one way of visualizing this heirarchy:
 
 <img style="width:100%;margin:20px 0px;" src="/spring2023/assets/images/tutorials/tutorial08/react-diagram.svg" />
 
+Some questions you should be asking yourself:
+* What does the JSX look like for each component?
+* Which of your components will issue fetch requests?
+* If your component is updated, does it affect the state of the other components?
+{:.compact}
 
-Think about what the JSX might look like for each component, and also which of your components might issue fetch requests.
+Also, You are **strongly encourageed** to add a comment at the top of each component that is a 1-sentence summary of what the component's "job" is (which is good software engineering practice).
+
 
 {:#step2}
 ### Step 2: Create stubs for each component
-Once you've decided on your components, create a JavaScript file for each of the 5 components listed above -- `NavLinks` (already done for you), `Profile`, `Suggestions`, `Stories`, `Posts` -- in your `src` directory. In each JavaScript file, create a react component that returns a simple  JSX element associated with it. So, for instance, the `Posts` component would render a `div` element (and eventually the list of posts):
+Once you've decided on your components, create a JavaScript file for each of the 5 components listed above -- `NavLinks` (already done for you), `Profile`, `Suggestions`, `Stories`, `Posts` -- in your `src` directory. To begin with, each React component should just return the simplest JSX representation of the component that you can think of (given that we're not querying the API yet). We will make our components "smarter" later on. So, for instance, the `Posts` component could render a simple `div` element (but would eventually render a list of posts):
 
 ```jsx
 import React from 'react';
@@ -213,7 +216,7 @@ export default function Posts() {
 }
 ```
 
-When you're done creating all of your components, refactor your `App.js` so that the render function is using your React components (don't forget to import them all). Please review <a href="https://reactjs.org/docs/components-and-props.html" target="_blank">components and props</a> if you have any questions about how that works.
+When you're done creating all of your components, refactor your `App.js` to use the 5 React components you just made (don't forget to import them all).
 
 ```jsx
 import React from 'react';
@@ -254,13 +257,20 @@ export default function App ({token}) {
 ### Step 3. Implement the "Posts" and "Post" Components
 Next, modify the logic of your `Posts` component to display all of the posts in the news feed. Recall that in the React model, your fetch logic and your rendering logic are decoupled. In other words, you'll probably want to:
   
-* Fetch the posts from a working "Photo App" endpoint (<a href="/api/posts">/api/posts</a>).
-    * Important: make sure that any fetch logic that needs to happen **when the component loads** is (a) encapsulated in a function, and (b) passed into the useEffect() function.
-    * If you do not do this, React will infinitely fetch, then render, then fetch again, then render, and so forth...
-    * You can read more about this on the <a href="https://beta.reactjs.org/reference/react/useEffect#fetching-data-with-effects" target="_blank">React documentation</a>
+* Fetch the posts from the course's "Photo App" endpoint (<a href="/api/posts">/api/posts</a>).
+    * Important: make sure that any fetch logic that needs to happen **when the component loads** is done inside the `useEffect()` function.
+    * If you do not do this, React will infinitely fetch, then render, then fetch again, then render, and so forth. If Sarah hasn't done a demo of this issue, ask her to.
+    * You can read more about this on the <a href="https://beta.reactjs.org/reference/react/useEffect#fetching-data-with-effects" target="_blank">React documentation</a> and <a href="https://beta.reactjs.org/learn/synchronizing-with-effects" target="_blank">Step 2 of Synchronizing with Effects</a>
+    {:.compact}
 * Ensure that the fetched posts are stored as a **state variable** (using react's built-in `useState()` function).
     * Why? Because any change to a state variable triggers a component redraw (so that the presentation is always in sync with the data).
 * Because each post is complex, and will likely be refactored into several different subcomponents, go ahead and create a new `Post.js` component. It can be simple for now (just display the username, photo, and caption).
+
+#### Suggested References
+* <a href="https://beta.reactjs.org/learn/passing-props-to-a-component" target="_blank">Passing props to a component</a>
+* <a href="https://beta.reactjs.org/learn/state-a-components-memory" target="_blank">State: a component's memory</a>
+* <a href="https://beta.reactjs.org/learn/synchronizing-with-effects" target="_blank">Effects and the useEffect function</a>
+{:.compact}
 
 If you get stuck, look at the `hints` folder and study the `Post.js` structure. Don't just copy it...look at it and try to understand what's happening. 
 
