@@ -1,7 +1,7 @@
 import React from 'react';
 import NavLinks from './NavLinks';
 
-function App ({token}) { 
+export default function App ({token}) { 
     console.log('access token:', token);
     
     return (
@@ -43,5 +43,3 @@ function App ({token}) {
     );
     
 }
-
-export default App;

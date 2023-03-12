@@ -10,6 +10,7 @@ EXCLUDED = [
     'zip_it.py',
     'build_navigator.py',
     'notebook-to-script.py',
+    'node_modules',
     'my_token.py',
     # 'index.html',
     'index.md',
