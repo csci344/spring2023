@@ -3,7 +3,7 @@ layout: assignment-two-column
 title: Introduction to React
 type: tutorial
 abbreviation: Tutorial 8
-draft: 1
+draft: 0
 points: 6
 num: 8
 due_date: 2023-03-17
@@ -41,11 +41,17 @@ due_date: 2023-03-17
     }
 </style>
 
+> ## 1. Do the Readings
+> If you haven't take a look at these documents, carve out some time to do it.
+> * <a href="https://beta.reactjs.org/learn" target="_blank">Quick Start</a>
+> * <a href="https://beta.reactjs.org/learn/tutorial-tic-tac-toe" target="_blank">Tic Tac Toe</a>
+> * <a href="https://beta.reactjs.org/learn/thinking-in-react" target="_blank">Thinking in React</a>
+> * <a href="https://beta.reactjs.org/learn/sharing-state-between-components" target="_blank">Sharing state between components</a>
 
-## New Instructions
-* Navigate to your tutorials directory
-* Create a react app on the command line as follows: `npx create-react-app tutorial08`
-* replace the entire `index.html` with this:
+## 2. Set Up Instructions
+* If you haven't downloaded and installed Node.js, do that first (see lecture materials).
+* Download the starter files and save them in your `csci344/tutorials` folder.
+* Open `index.html` in VS Code. You should see something like this:
 
 ```html
 <!doctype html>
@@ -62,37 +68,32 @@ due_date: 2023-03-17
 </html>
 ```
 
+<a class="nu-button" href="/spring2022/course-files/tutorials/tutorial08.zip">tutorial08.zip<i class="fas fa-download" aria-hidden="true"></i></a>
+
+### A few things to notice
+Before you start coding, I wanted to bring your attention to some features of your code:
+
+#### 1. Proxy URL
+Open `package.json` and note that there is a property called `proxy` which is set to <a href="https://photo-app-secured.herokuapp.com/" target="_blank">https://photo-app-secured.herokuapp.com/</a>. What this means is that in each of your fetch endpoints, you don't need to specify the fully qualified path. For instance, if you want to query for a list of Post objects, you only need to specify this address: `/api/posts`.
+
+#### 2. Access Token
 
 
 
 
-<a class="nu-button" href="/spring2022/course-files/labs/lab10.zip">lab10.zip<i class="fas fa-download" aria-hidden="true"></i></a>
-
-
-
-> ## 1. Do the Readings
-> If you haven't take a look at these documents, carve out some time to do it.
-> * <a href="https://beta.reactjs.org/learn" target="_blank">Quick Start</a>
-> * <a href="https://beta.reactjs.org/learn/tutorial-tic-tac-toe" target="_blank">Tic Tac Toe</a>
-> * <a href="https://beta.reactjs.org/learn/thinking-in-react" target="_blank">Thinking in React</a>
-> * <a href="https://beta.reactjs.org/learn/sharing-state-between-components" target="_blank">Sharing state between components</a>
 
 ## Instructions
 In this week's lab, you will be re-implementing a subset of your Photo App UI using React. The following 5 tasks are required in order for you to get full credit for the lab:
 
 {:.compact}
 1. [Create a component hierarchy](#step1)
-2. [Create stubs for each component](#step2)
-3. [Implement the "Posts" and "Post" components](#step3)
-4. [Implement the "LikeButton" component](#step4)
-5. [Implement the "BookmarkButton" component](#step5)
+1. [Create stubs for each component](#step2)
+1. [Implement the "Posts" and "Post" components](#step3)
+1. [Implement the "BookmarkButton" component](#step4)
+1. [Implement the "LikeButton" component](#step5)
 
 
 ## Set Up
-
-### REST API
-Use course API for now, and make sure you update your React app's `proxy` url address in `package.json` to: <a href="https://photo-app-secured.herokuapp.com/" target="_blank">https://photo-app-secured.herokuapp.com/</a>.
-
 
 ### Deployment Notes
 Although we are using Node to build and run our React app, we will ultimately be compiling our React app to HTML, CSS, and JavaScript so that the browser can download these files from our website and run them client-side. It's confusing, but the final output of our React App is client-side code that our browser will run.

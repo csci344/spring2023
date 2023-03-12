@@ -1,50 +1,47 @@
 import React from 'react';
+import NavLinks from './NavLinks';
 
-class App extends React.Component {  
-
-    constructor(props) {
-        super(props);
-        console.log('Constructor triggered', props);
-    }
-
-    render () {
-        console.log('render');
-        return (
-            <div>
-
+function App ({token}) { 
+    console.log('access token:', token);
+    
+    return (
+        <div>
+            
+            {/* Navbar */}
             <nav className="main-nav">
                 <h1>Photo App</h1>
-                {/* Navigation Links */}
+                <NavLinks token={token} />
             </nav>
-
+           
+           {/* Right Panel */}
             <aside>
                 <header>
-                    Profile
-                    {/* Navigation Links */}
+                    Profile Goes Here...
                 </header>
                 <div className="suggestions">
-                    <p className="suggestion-text">Suggestions for you</p>
                     <div>
-                        Suggestions
-                        {/* Suggestions */}
+                        Suggestions go here...
                     </div>
                 </div>
             </aside>
 
-            <main className="content">
+            <main>
+
+                {/* Stories */}
                 <header className="stories">
-                    Stories
-                    {/* Stories */}
+                    Stories go here...
                 </header>
+
+                {/* Posts */}
                 <div id="posts">
-                    Posts
-                    {/* Posts */}
+                    Posts go here...
                 </div>
+
             </main>
 
-            </div>
-        );
-    }
+        </div>
+    );
+    
 }
 
 export default App;

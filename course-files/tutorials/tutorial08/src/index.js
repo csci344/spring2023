@@ -1,22 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import ReactDOM from 'react-dom';
 import App from './App';
+import './index.css';
 import {getAccessToken} from './utils';
 
-const initPage = async () => {
-    console.log("init page...");
+// Kicks off the app after the user "logs in":
+async function renderApp() {
     const token = await getAccessToken('webdev', 'password');
-    const root = ReactDOM.createRoot(document.getElementById('root'));
-    root.render(
-        <React.StrictMode>
-            {/* Note: because we're using strict mode, 
-                the App's constructor will be run twice.
-                Don't be alarmed1
-            */}
-            <App accessToken={token} />
-        </React.StrictMode>
+    
+    ReactDOM.render(
+        <App token={token} />,
+        document.getElementById('root')
     );
 }
 
-initPage();
+renderApp();
