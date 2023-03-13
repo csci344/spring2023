@@ -8,9 +8,8 @@ due_date: 2023-03-13
 ---
 
 ## Readings
-Before beginning the React assignment -- and definitely before Friday's tutorial -- please complete the React Tutorial (beta version using functional components). It will take you a few hours, but you won't be able to make progress with React without understanding some of the core React conventions and workflow, including:
+Before beginning the React assignment -- and definitely before Friday's tutorial -- please complete the following readings. It will take you a few hours, but you won't be able to make progress with React without understanding some of the core React conventions and workflow, including:
 * <a href="https://beta.reactjs.org/learn" target="_blank">Quick Start</a>
-* <a href="https://beta.reactjs.org/learn/tutorial-tic-tac-toe" target="_blank">Tic Tac Toe</a>
 * <a href="https://beta.reactjs.org/learn/thinking-in-react" target="_blank">Thinking in React</a>. Make note of the steps:
     * Break the UI into a component hierarchy
     * Build a static version in React 
@@ -19,6 +18,7 @@ Before beginning the React assignment -- and definitely before Friday's tutorial
     * Adding "inverse data flow"
     {:.compact}
 * <a href="https://beta.reactjs.org/learn/sharing-state-between-components" target="_blank">Sharing state between components</a>
+* <a href="https://beta.reactjs.org/learn/tutorial-tic-tac-toe" target="_blank">Tic Tac Toe</a> (we will process this one in class)
 
 
 ## Slides
@@ -32,4 +32,5 @@ Videos and worked examples will be published after class:
 
 ## Activities
 
-1. Activity 3: Do the [Tic Tac Toe React Tutorial](../activities/react-get-started)
+1. Monday Activity: [Create a Carousel](../activities/react-intro-carousel-gallery)
+1. Wednesday Activity: Do the [Tic Tac Toe React Tutorial](../activities/react-get-started)

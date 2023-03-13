@@ -17,6 +17,8 @@ plugins:
 exclude: 
   - course-files/tutorials/tutorial08/solutions/node_modules*
   - course-files/tutorials/tutorial08/node_modules*
+  - course-files/lectures/lecture16/node_modules*
+  - course-files/lectures/lecture16/answers/node_modules*
   - course-files/homework/hw06/solutions/node_modules*
   - course-files/homework/hw06/node_modules*
   - _lectures/draft

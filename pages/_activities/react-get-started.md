@@ -2,7 +2,7 @@
 layout: two-column
 title: "Activity: Getting Started with React"
 type: tutorial
-abbreviation: Activity 3
+abbreviation: Activity 4
 draft: 0
 num: 23
 ---
