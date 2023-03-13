@@ -22,7 +22,7 @@ Before beginning the React assignment -- and definitely before Friday's tutorial
 
 
 ## Slides
-Slides will be posted before lecture.
+* Lecture 16: <a href="https://docs.google.com/presentation/d/17WnHEdeudoutBsMn1hY4tht3J8CdXyiEpOa2G4N5pRo/edit?usp=sharing" target="_blank">Intro to React</a>
 
 ## Videos & Lecture Files
 Videos and worked examples will be published after class:
@@ -32,5 +32,5 @@ Videos and worked examples will be published after class:
 
 ## Activities
 
-1. Monday Activity: [Create a Carousel](../activities/react-intro-carousel-gallery)
+1. Lecture 16 Activity (Monday): [Create a Carousel](../activities/react-intro-carousel-gallery)
 1. Wednesday Activity: Do the [Tic Tac Toe React Tutorial](../activities/react-get-started)
