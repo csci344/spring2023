@@ -8,8 +8,8 @@ num: 4
 ---
 
 ## 1. Relevant Readings
-* [You might not need an effect](https://beta.reactjs.org/learn/you-might-not-need-an-effect)
-* 
+* <a href="https://beta.reactjs.org/learn/synchronizing-with-effects" target="_blank">Synchronizing with effects</a>
+* <a href="https://beta.reactjs.org/learn/you-might-not-need-an-effect" target="_blank">You might not need an effect</a>
 
 ## 2. Download the starter files
 <a href="/spring2023/course-files/lectures/lecture17.zip" class="nu-button">Carousel + Server Data <i class="fas fa-download"></i></a>

@@ -23,7 +23,6 @@ Before beginning the React assignment -- and definitely before Friday's tutorial
 ### Other References (As Needed)
 * <a href="https://beta.reactjs.org/learn/synchronizing-with-effects" target="_blank">Synchronizing with effects</a>
 * <a href="https://beta.reactjs.org/learn/you-might-not-need-an-effect" target="_blank">You might not need an effect</a>
-* <a href="https://beta.reactjs.org/learn/you-might-not-need-an-effect" target="_blank">You might not need an effect</a>
 
 
 
