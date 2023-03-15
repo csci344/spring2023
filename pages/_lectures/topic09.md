@@ -18,7 +18,8 @@ Before beginning the React assignment -- and definitely before Friday's tutorial
     * Adding "inverse data flow"
     {:.compact}
 * <a href="https://beta.reactjs.org/learn/sharing-state-between-components" target="_blank">Sharing state between components</a>
-* <a href="https://beta.reactjs.org/learn/tutorial-tic-tac-toe" target="_blank">Tic Tac Toe</a> (we will process this one in class)
+* <a href="https://beta.reactjs.org/learn/tutorial-tic-tac-toe" target="_blank">Tic Tac Toe</a>
+    * You are strongly encouraged to do this on your own (see [Tic Tac Toe](../activities/react-get-started))
 
 ### Other References (As Needed)
 * <a href="https://beta.reactjs.org/learn/synchronizing-with-effects" target="_blank">Synchronizing with effects</a>
