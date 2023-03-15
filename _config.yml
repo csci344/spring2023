@@ -15,22 +15,15 @@ theme: minima
 plugins:
   - jekyll-feed
 exclude: 
-  - course-files/tutorials/tutorial08/solutions/node_modules*
-  - course-files/tutorials/tutorial08/node_modules*
-  - course-files/lectures/lecture16/node_modules*
-  - course-files/lectures/lecture16/answers/node_modules*
-  - course-files/homework/hw06/solutions/node_modules*
-  - course-files/homework/hw06/node_modules*
+  - course-files/*/*/solutions/node_modules*
+  - course-files/*/*/node_modules*
+  - course-files/*/*/answers/node_modules*
   - _lectures/draft
   - _assignments/draft
   - course-files/administrative
   - course-files/build
   - course-files/exams
-  - course-files/homework/drafts
-  - course-files/tutorials/drafts
-  - course-files/lectures/drafts
-  - course-files/practice_exams/drafts
-  - course-files/projects/drafts
+  - course-files/*/drafts
 collections:
   assignments:
     output: true

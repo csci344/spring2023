@@ -4,7 +4,7 @@ title: "Activity: Intro to React (Carousel + Gallery)"
 type: tutorial
 abbreviation: Activity 3
 draft: 0
-num: 23
+num: 3
 ---
 
 {:.blockquote-no-margin}

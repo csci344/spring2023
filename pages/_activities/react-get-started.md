@@ -2,9 +2,9 @@
 layout: two-column
 title: "Activity: Getting Started with React"
 type: tutorial
-abbreviation: Activity 4
+abbreviation: Activity 5
 draft: 0
-num: 23
+num: 5
 ---
 
 {:.blockquote-no-margin}
