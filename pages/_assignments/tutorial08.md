@@ -163,7 +163,7 @@ export default function App ({token}) {
 
 
 ## 3. Your Tasks
-In this week's lab, you will begin HW6 (re-implementing the Photo App UI using React). To get full credit for this lab, complete the following tasks:
+In this week's tutorial, you will begin HW6 (re-implementing the Photo App UI using React). To get full credit for this tutorial, complete the following tasks:
 
 {:.compact}
 1. [Create a component hierarchy](#step1) (we will walk through this together)
@@ -287,4 +287,4 @@ The `LikeButton` also needs to notify the `Post` component to redraw after it fe
 
 
 ## What to Turn In
-When you're done, zip your `lab08` directory and submit your zip file to Canvas. Please **DO NOT** include your `node_modules` in the zip file (which will add hundreds of megabytes to your zip file).
+When you're done, zip your `tutorial08` directory and submit your zip file to Canvas. Please **DO NOT** include your `node_modules` in the zip file (which will add hundreds of megabytes to your zip file).
