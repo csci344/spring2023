@@ -9,7 +9,6 @@ num: 9
 due_date: 2023-03-24
 ---
 
-
 <style>
     table th:first-child, table td:first-child {
         min-width: auto;
