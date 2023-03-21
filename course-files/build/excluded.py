@@ -20,6 +20,8 @@ EXCLUDED = [
     'cpd.db',
     'build',
     '.pyc',
+    'env',
+    'venv',
     '__pycache__',
     '.ipynb_checkpoints',
     '.DS_Store',

@@ -148,7 +148,7 @@ Once you've set up your flask installation, you will do 4 required exercises:
 | 3. | [Grab data from another server](#task_3) | Query another REST API and then forward the resulting data as an HTTP response. Allow the user to specify criteria using query parameters. |
 | 4. | [Merge your data with a template](#task_4) | Practice creating a data-driven, server-side HTML file from a template. Templates allow you to separate the data from the presentation of the data. |
 | 5. | [Merge someone else's data with a template](#task_5) | Merge yelp data with a template that you design. |
-| 6. | [Merge someone else's data with a template](#task_6) (more practice) | Same as task 5 except that you will loop through each restaurant using Jinja looping syntax. |
+| 6. | [Merge someone else's data with a template](#extra_credit) (more practice) | **Extra Credit** Same as task 5 except that you will loop through each restaurant using Jinja looping syntax. |
 
 Please complete the following exercises to get a sense of the kinds of things you can do with Flask:
 
@@ -309,11 +309,12 @@ Modify the HTML in the `restaurant.html` template so that it displays the Yelp d
 Feel free to jazz up your template any way you like!
 * [Jinja Cheatsheet](https://www.codecademy.com/learn/learn-flask/modules/flask-templates-and-forms/cheatsheet)
 
+{:#extra_credit}
 ## 5. Extra Credit (5pts)
 If you have more time, please also try `exercise6`. It's similar to `exercise5`, but requires a Jinja
 
 ### 1. Looping using Jinja
-In exercise 5, you only showed a single restaurant. Look at the <a href="https://jinja.palletsprojects.com/en/3.0.x/templates/" target="_blank">Jinja documentation</a> and see if you can figure out how to output all of the matching restaurants for the search (not just the first one). See if you can make your template look like this one:
+In `exercise5`, you only display a single restaurant. Look at the <a href="https://jinja.palletsprojects.com/en/3.0.x/templates/" target="_blank">Jinja documentation</a> and see if you can figure out how to output all of the matching restaurants for the search (not just the first one). See if you can make your template look like this one:
 
 <img class="large frame" src="/spring2023/assets/images/tutorials/tutorial09/restaurants.png" />
 
