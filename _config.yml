@@ -18,6 +18,9 @@ exclude:
   - course-files/*/*/solutions/node_modules*
   - course-files/*/*/node_modules*
   - course-files/*/*/answers/node_modules*
+  - course-files/*/*/solutions/env*
+  - course-files/*/*/env*
+  - course-files/*/*/answers/env*
   - _lectures/draft
   - _assignments/draft
   - course-files/administrative

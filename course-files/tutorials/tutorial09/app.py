@@ -4,95 +4,157 @@ from flask import request
 import random
 import json
 import requests
-from helpers import CurrentUser
 from pprint import pprint
 
 # initializes flask app:
 app = Flask(__name__)
 
-#########################
-# some global variables #
-#########################
-current_user = CurrentUser(first_name='Erick', last_name='Rubi', email='erub03@gmail.com', username='erub03')
+###################
+# global variable #
+###################
+current_user = {
+    'first_name': 'Erick',
+    'last_name': 'Rubi',
+    'email': 'erub03@gmail.com',
+    'username': 'erub03'
+}
 
-quotes = (
-    '“We May Encounter Many Defeats But We Must Not Be Defeated.” – Maya Angelou',
-    '“The Way Get Started Is To Quit Talking And Begin Doing.” – Walt Disney',
-    '“Security Is Mostly A Superstition. Life Is Either A Daring Adventure Or Nothing.” – Life Quote By Helen Keller',
-    '“The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty.” – Winston Churchill',
-    '“Don’t Let Yesterday Take Up Too Much Of Today.” – Will Rogers',
-    '“You Learn More From Failure Than From Success. Don’t Let It Stop You. Failure Builds Character.” – Unknown',
-    '“If You Are Working On Something That You Really Care About, You Don’t Have To Be Pushed. The Vision Pulls You.” – Steve Jobs',
-)
-
-##############
-# Exercise 1 #
-##############
+#############################
+# For Grading (do not edit) #
+#############################
 @app.route('/')
+def home():
+    return '''
+        <html>
+        <body>
+            <h1>Homepage</h1>
+            <p>Demo of some typical things that a server can do...</p>
+            <ul>
+                <li>Exercise 1: <a href="/message">/message</a></li>
+                <li>Exercise 2: <a href="/data/quotes/">/data/quotes/</a></li>
+                <li>Exercise 3: <a href="/data/yelp/?location=Asheville+NC&term=thai">/data/yelp/?location=Asheville+NC&term=thai</a></li>
+                <li>Exercise 4: <a href="/ui/quote">/ui/quote</a></li>
+                <li>Exercise 5: <a href="/ui/first-restaurant/?location=Asheville+NC&term=thai">/ui/first-restaurant/?location=Asheville+NC&term=thai</a></li>
+                <li>Exercise 6: <a href="/ui/all-restaurants/?location=Asheville+NC&term=thai">/ui/all-restaurants/?location=Asheville+NC&term=thai</a> (5pts Extra Credit)</li>
+            </ul>
+        </body>
+        '''
+
+##############################
+# Exercise 1: Custom Message #
+##############################
+@app.route('/message')
 def exercise1():
-    return 'Hello World!'
+    return 'Hello world!'
 
 
-##############
-# Exercise 2 #
-##############
-@app.route('/quote')
+###########################################
+# Exercise 2: Grab data from a "database" #
+###########################################
+@app.route('/data/quotes')
+@app.route('/data/quotes/')
 def exercise2():
+    import json
+    with open('data.json') as f:
+        data = json.load(f)
+    print(data)
+    return json.dumps({})
+    
+
+
+#############################################
+# Exercise 3: Grab data from another server #
+#############################################
+'''
+Your web server can also communicate with another server. 
+For instance, we could query Yelp, and then relay some or 
+all of this data back to the requester. 
+
+Currently, the search term and location are hard-coded (5 pizza restaurants in Asheville). 
+How would you modify this code so that that your endpoint 
+can make use of query string request parameters:
+
+e.g., http://127.0.0.1:5000/yelp-proxy/location=NY,%20NY&term=chinese&count=3
+'''
+@app.route('/data/yelp/')
+@app.route('/data/yelp')
+def exercise3():
+    search_term = 'pizza'
+    location = 'Asheville, NC'
+    # go fetch data from another server and give it to the requestor:
+    url = 'https://www.apitutor.org/yelp/simple/v3/businesses/search?location={location}&term={search_term}&limit={count}'.format(
+        location=location, 
+        search_term=search_term, 
+        count=5)
+    response = requests.get(url)
+    data = response.json()
+    return json.dumps(data)
+
+
+
+###################################################################
+# Exercise 4: Merge data with a template (server-side templating) #
+###################################################################
+@app.route('/ui/quote')
+def exercise4():
+    import json
+    with open('data.json') as f:
+        quotes = json.load(f)
+    print(quotes)
     return render_template(
         'quote-of-the-day.html',
         user=current_user
     )
 
-##############
-# Exercise 3 #
-##############
-@app.route('/restaurant-data/')
-@app.route('/restaurant-data')
-def exercise3():
-    search_term = 'pizza'
-    location = 'Evanston, Il'
-    url = 'https://www.apitutor.org/yelp/simple/v3/businesses/search?location={0}&term={1}'.format(location, search_term)
-    response = requests.get(url)
-    data = response.json()
-    pprint(data) # for debugging -- prints the result to the command line
-    return json.dumps(data)
 
-##############
-# Exercise 4 #
-##############
-@app.route('/restaurant/')
-@app.route('/restaurant')
-def exercise4():
+#########################################################
+# Exercise 5: Merge someone else's data with a template #
+#########################################################
+@app.route('/ui/first-restaurant/')
+@app.route('/ui/first-restaurant')
+def exercise5():
     args = request.args
     location = args.get('location')
     search_term = args.get('term')
     if not (location and search_term):
         return '"location" and "term" are required query parameters'
-    
-    
-    url = 'https://www.apitutor.org/yelp/simple/v3/businesses/search?location={0}&term={1}'.format(location, search_term)
+
+    url = 'https://www.apitutor.org/yelp/simple/v3/businesses/search?location={0}&term={1}&limit=1'.format(
+        location, search_term)
     response = requests.get(url)
     restaurants = response.json()
-    pprint(restaurants[0]) # for debugging
+    pprint(restaurants[0])  # for debugging
     return render_template(
         'restaurant.html',
+        endpoint='/ui/first-restaurant/',
         user=current_user,
         search_term=search_term,
         location=location,
         restaurant=restaurants[0]
     )
 
-@app.route('/cards/')
-@app.route('/cards')
-def photos_static():
+
+#########################################################################
+# Exercise 6: Merge someone else's data with a template (more practice) #
+#########################################################################
+@app.route('/ui/all-restaurants/')
+@app.route('/ui/all-restaurants')
+def exercise6():
     args = request.args
     location = args.get('location')
     search_term = args.get('term')
     if not (location and search_term):
         return '"location" and "term" are required query parameters'
     
-    
-    return render_template('cards.html')
-
-
-    
+    url = 'https://www.apitutor.org/yelp/simple/v3/businesses/search?location={0}&term={1}'.format(
+        location, search_term)
+    response = requests.get(url)
+    restaurants = response.json()
+    return render_template(
+        'restaurants.html',
+        endpoint='/ui/all-restaurants/',
+        user=current_user,
+        location=location,
+        search_term=search_term,
+        restaurants=restaurants
+    )
