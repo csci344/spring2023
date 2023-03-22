@@ -26,7 +26,7 @@ due_date: 2023-03-24
 > * Janetakis, Nick (Oct., 2017). <a href="https://nickjanetakis.com/blog/server-side-templates-vs-rest-api-and-javascript-front-end" target="_blank">Server Side Templates vs REST API and Javascript Front-End</a>.
 
 ## 1. Intro to Flask
-<a href="https://flask.palletsprojects.com/en/2.0.x/" target="_blank">Flask</a> is a framework, built with Python, for helping people build dynamic, scalable web applications. We have selected Flask as our web server engine for this semester because it has a relatively simple set of common abstractions, and is therefore easier to learn than some other frameworks. At the same time, it is also very powerful, and has features such as:
+<a href="https://flask.palletsprojects.com/en/2.0.x/" target="_blank">Flask</a> is a framework, built with Python, for helping people build dynamic, scalable web applications. I have selected Flask as our web server engine for this semester because it has a relatively simple set of common abstractions, and is therefore easier to learn than some other frameworks. At the same time, it is also very powerful, and has features such as:
 
 * Templating, using the <a href="https://jinja.palletsprojects.com/en/3.0.x/" target="_blank">Jinja template engine</a>
 * A simple way to define <a href="https://flask.palletsprojects.com/en/2.0.x/api/#url-route-registrations" target="_blank">routes</a> (which bind URL addresses to functions), and to specify which HTTP methods are valid for a particular route (HEAD, OPTIONS, GET, POST, PUT, PATCH, DELETE)
@@ -80,7 +80,7 @@ Note that when your venv is activated, there will be a `(env)` prefix in front o
 ## 3. Set Up
 If you haven't used Python before, please download and install it: <a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/</a>. Any version of python >= 3.7 will work.
 
-Once Python is installed, download tutorial09.zip (below), unzip it, and move your lab02 folder inside of your webdev-labs folder. 
+Once Python is installed, download tutorial09.zip (below), unzip it, and move your `tutorial09` folder inside of your `tutorials` folder. 
 
 <a class="nu-button" href="/spring2023/course-files/tutorials/tutorial09.zip">tutorial09.zip<i class="fas fa-download" aria-hidden="true"></i></a>
 
@@ -139,7 +139,7 @@ You should see the following output:
 
 
 ## 4. Required Flask Exercises
-Once you've set up your flask installation, you will do 4 required exercises:
+Once you've set up your flask installation, you will complete 5 required exercises. You may also complete the optional exercise (#6) for extra credit:
 
 |  | Exercise | Purpose |
 |--|--|--|
@@ -150,7 +150,7 @@ Once you've set up your flask installation, you will do 4 required exercises:
 | 5. | [Merge someone else's data with a template](#task_5) | Merge yelp data with a template that you design. |
 | 6. | [Merge someone else's data with a template](#extra_credit) (more practice) | **Extra Credit** Same as task 5 except that you will loop through each restaurant using Jinja looping syntax. |
 
-Please complete the following exercises to get a sense of the kinds of things you can do with Flask:
+Each of these exercises is intended to help you get a sense of the kinds of things you can do with Flask (or any web framework):
 
 {:#task_1}
 ### 1. Display personalized greeting
@@ -238,7 +238,7 @@ If you implemented this function correctly:
 
 {:#task_4}
 ### 4. Merge your data with a template
-The `exercise4` function uses a template to generate an HTML string, which is returned as a response. Specifically, python parses the `templates/quote-of-the-day.html` file, finds any Jinja syntax, evaluates that syntaz, and finally sends a "plain" HTML file back to the client:
+The `exercise4` function uses a template to generate an HTML string, which is returned as a response. Specifically, python parses the `templates/quote-of-the-day.html` file, finds any Jinja syntax, evaluates that syntax, and finally sends a "plain" HTML file back to the client (very similar to a template literal or JSX, but with more power):
 
 ```python
 @app.route('/quote')
@@ -252,7 +252,9 @@ Open the `templates/quote-of-the-day.html` file and examine how the Jinja templa
 
 #### Your Task
 Please make the following modifications:
-1. In `app.py`, add another context variable, called `quote` that holds a randomly selected quote from the `quotes` list (see ~line 17). Consider using the built-in <a href="https://www.w3schools.com/python/ref_random_choice.asp" target="_blank">random.choice</a> function.
+1. In `app.py`, add another context variable, called `quote` that holds a randomly selected quote from the `quotes` list (see ~line 17). 
+    *  The context variable must be included as a keyword argument in your `render_template` function.
+    * I recommend that you use Python's built-in <a href="https://www.w3schools.com/python/ref_random_choice.asp" target="_blank">random.choice</a> function to select a random element from a list.
 1. In `templates/quote-of-the-day.html`, update the template so that the quote of the day is displayed.
     * [Jinja Cheatsheet](https://www.codecademy.com/learn/learn-flask/modules/flask-templates-and-forms/cheatsheet)
 
@@ -271,24 +273,29 @@ Now, you're going to create a data-driven **template** to display information ab
 @app.route('/ui/first-restaurant/')
 @app.route('/ui/first-restaurant')
 def exercise5():
+    # code to parse the query parameters (like in exercise 3):
     args = request.args
     location = args.get('location')
     search_term = args.get('term')
+    
+    # error handling:
     if not (location and search_term):
         return '"location" and "term" are required query parameters'
 
+    # code to query yelp:
     url = 'https://www.apitutor.org/yelp/simple/v3/businesses/search?location={0}&term={1}&limit=1'.format(
         location, search_term)
     response = requests.get(url)
     restaurants = response.json()
-    pprint(restaurants[0])  # for debugging
+    
+    # code to render the template (and to pass the template the data it needs)
     return render_template(
         'restaurant.html',
         endpoint='/ui/first-restaurant/',
         user=current_user,
         search_term=search_term,
         location=location,
-        restaurant=restaurants[0]
+        restaurant=restaurants[0] # just show the first restaurant
     )
 ```
 
