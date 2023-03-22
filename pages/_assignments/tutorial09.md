@@ -132,9 +132,9 @@ You should see the following output:
  * Debugger PIN: 273-580-071
  ```
 
- Navigate to <a href="http://127.0.0.1:5000/" target="_blank">http://127.0.0.1:5000/</a>, and you should see a screen that says "Hello World!"
+ Navigate to <a href="http://127.0.0.1:5000/" target="_blank">http://127.0.0.1:5000/</a>, and you should see a screen that lists the exercises that you are to complete:
 
-<img class="medium frame" src="/spring2023/assets/images/tutorials/tutorial09/hello-world.png" />
+<img class="medium frame" src="/spring2023/assets/images/tutorials/tutorial09/home.png" />
 
 
 
