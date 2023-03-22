@@ -1,5 +1,2 @@
-*.pyc
-.DS_Store
-bin
-lib
-Scripts
+venv
+env

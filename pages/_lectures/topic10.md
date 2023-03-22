@@ -13,7 +13,8 @@ due_date: 2023-03-22
 * <a href="https://flask.palletsprojects.com/en/2.2.x/quickstart/" target="_blank">Flask Quickstart guide</a> (skim)
 
 ## Slides
-Slides will be posted before class.
+* Lecture 18: <a href="https://docs.google.com/presentation/d/18GCoadLH95gIldck4Z66BxoJZCzsmU2VFCJEL-xD1Mk/edit?usp=sharing" target="_blank">Python Crash Course</a>
+
 
 ## Videos & Lecture Files
 Videos and worked examples will be published after class:
@@ -21,5 +22,5 @@ Videos and worked examples will be published after class:
 * <a href="https://github.com/vanwars/csci344" target="_blank">Worked examples on GitHub</a>
 
 
-<!-- ## Activities
-1. Lecture 18 Activity (Wednesday): TBD -->
+## Activities
+1. Lecture 18 Activity (Wednesday): [Python practice](/spring2023/course-files/lectures/lecture18.zip)
