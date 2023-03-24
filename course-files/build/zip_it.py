@@ -9,7 +9,8 @@ def exclude(filename):
     from builtins import any
     for pattern in EXCLUDED:
         # for word in file_tokens:
-        match = re.search(pattern, filename)
+        # print(pattern)
+        match = re.search('/' + pattern, filename)
         try:
             if match.group(0):
                 return True

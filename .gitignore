@@ -24,3 +24,4 @@ course-files/lectures/lecture24/answers/files/*.csv
 my_token.py
 node_modules
 env
+venv
