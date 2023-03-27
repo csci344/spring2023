@@ -8,7 +8,6 @@ due_date: 2023-03-22
 ---
 
 ## Readings
-* <a href="https://nickjanetakis.com/blog/server-side-templates-vs-rest-api-and-javascript-front-end" target="_blank">Server Side Templates vs REST API and Javascript Front-End</a>. Janetakis, Nick (Oct., 2017).
 * <a href="https://books.trinket.io/pfe/index.html" target="_blank">Python for Everybody Textbook</a>, by Charles Severance
 * <a href="https://flask.palletsprojects.com/en/2.2.x/quickstart/" target="_blank">Flask Quickstart guide</a> (skim)
 

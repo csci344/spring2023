@@ -3,7 +3,7 @@ layout: assignment-two-column
 title: Database Activity
 type: tutorial
 abbreviation: Tutorial 10
-draft: 1
+draft: 0
 points: 6
 num: 10
 due_date: 2023-03-31
@@ -93,16 +93,13 @@ ORDER BY count(posts.id) desc;
 
 With very few lines of "declarative" code, we have merged two data structures together, selected a few attributes, counted the posts by user, and sorted the post_counts in decending order. It's useful to think about how you might do something like this manually, with python, if you had 2 lists of dictionaries (doable, but it would take a lot longer).
 
-Another nice thing about SQL is that these queries can be optimized to be very efficient (though this is well beyond the scope of this course). If you want to learn more, consider taking:
-
-* COMP_SCI 217, taught by Prof. Huiling Hu. While the course does not count for the CS major, I highly recommend it if you are interested in learning more about SQL databases.
-* COMP_SCI 339, taught by Prof. Peter Dinda & Prof. Jennie Rogers. This course gives you a sense of how databases work "under the hood" (i.e., what happens after the SQL query is issued).
+Another nice thing about SQL is that these queries can be optimized to be very efficient (though this is well beyond the scope of this course). If you want to learn more, consider taking **CSCI 343. Database Management Systems**.
 
 {:#installation}
 ## 1. Installation
 In order to complete today's lab, you will need to install PostgreSQL on your laptop. These installation instructions are based on the  <a href="https://www.postgresqltutorial.com/postgresql-getting-started/" target="_blank">PostgreSQL Getting Started Guide</a>. Please do the following:
 
-* <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads" target="_blank">DownloadPostgreSQL 14.1</a> for either Windows or Mac
+* <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads" target="_blank">Download the latest PostgreSQL version</a> (currently v. 15.x) for either Windows or Mac
 * Follow the OS-Specific instructions to install and verify your PostgreSQL installation:
     * <a href="https://www.postgresqltutorial.com/install-postgresql/" target="_blank">Windows</a>
     * <a href="https://www.postgresqltutorial.com/install-postgresql-macos/" target="_blank">Mac</a>
@@ -114,16 +111,16 @@ In order to complete today's lab, you will need to install PostgreSQL on your la
 
 {:#configuration}
 ## 2. Configuration
-<a class="nu-button" href="/spring2022/course-files/labs/lab03.zip">lab03.zip<i class="fas fa-download" aria-hidden="true"></i></a>
+<a class="nu-button" href="/spring2023/course-files/tutorials/tutorial10.zip">tutorial10.zip<i class="fas fa-download" aria-hidden="true"></i></a>
 
-* Download lab03.zip (above) and unzip it, and move it into your `webdev-labs` folder / git repo.
+* Download tutorial10.zip (above) and unzip it, and move it into your `csci344/tutorials` folder / git repo.
 * Follow the procedure outlined in <a href="https://www.postgresqltutorial.com/load-postgresql-sample-database/" target="_blank">these instructions</a>, but make the following modifications:
-    * Create a database called `photo_app_lab3`, using either the command line interface or the PGAdmin GUI interface.
-    * Load the `photo_app_lab03.tar` (in the lab03 folder you just downloaded) into the empty `photo_app_lab3` database (to create the table structure and table data).
+    * Create a database called `photo_app_tutorial`, using either the command line interface or the PGAdmin GUI interface.
+    * Load the `tutorial10.tar` (in the tutorial10 folder you just downloaded) into the empty `tutorial10` database (to create the table structure and table data).
 
-<!-- pg_dump -U postgres -p 5432 -Ft photo-app > ~/Desktop/photo_app_lab03.tar
-postgres=# CREATE DATABASE photo_app_lab03;
-pg_restore -U postgres -d photo_app_lab03 ~/Desktop/photo_app_lab03.tar -->
+<!-- pg_dump -U postgres -p 5432 -Ft photo-app > ~/Desktop/tutorial10.tar
+postgres=# CREATE DATABASE tutorial10;
+pg_restore -U postgres -d tutorial10 ~/Desktop/tutorial10.tar -->
 
 You have a few options for interacting with your database: 
 
@@ -136,7 +133,7 @@ PGAdmin is a GUI tool for managing PostgreSQL databases.
 
 #### 1. Mac instructions
 Note: you only have to do this if the `psql -U postgres` command was NOT recognized on your Terminal.
-1. Find the location of your `psql` executable on your computer by searching for `psql`. Make a note of where it is (for Sarah, it's located at `/Library/PostgreSQL/14/bin/psql`)
+1. Find the location of your `psql` executable on your computer by searching for `psql`. Make a note of where it is (for Sarah, it's located at `/Library/PostgreSQL/15/bin/psql`)
 1. Open a Terminal window. Figure out which shell you're using by typing `echo $SHELL` at the command prompt.
 1. Depending on the shell version you're using, open *one* of the files below (in your home directory) in a text editor:
     * for bash, edit one of these:
@@ -146,7 +143,7 @@ Note: you only have to do this if the `psql -U postgres` command was NOT recogni
         * `~/.zshrc`
         * `~/.zprofile`
 
-1. In the file you just opened, add the following line:<br>`PATH=$PATH:/Library/PostgreSQL/14/bin` (but use ***your*** bin/psql path) to the end.
+1. In the file you just opened, add the following line:<br>`PATH=$PATH:/Library/PostgreSQL/15/bin` (but use ***your*** bin/psql path) to the end.
 1. Source the file you just edited by typing `source ~/.bashrc` (or whatever file you just edited). This will load your updated path variable and make it accessible to your shell.
 1. When you're done, type `psql -U postgres` on your command line and it should work.
 
@@ -159,7 +156,7 @@ You can read more about each shell here:
 #### 2. Windows instructions
 Note: you only have to do this if the `psql -U postgres` command was NOT recognized on your command prompt.
 Follow <a href="https://sqlbackupandftp.com/blog/setting-windows-path-for-postgres-tools" target="_blank">this tutorial</a>. Notes:
-1. You will first need to find where your PostgreSQL bin has been installed on your computer. Should be something like: `C:\Program Files\PostgreSQL\14\bin`
+1. You will first need to find where your PostgreSQL bin has been installed on your computer. Should be something like: `C:\Program Files\PostgreSQL\15\bin`
 1. Once you do, you will append the path to your PostgreSQL bin to your PATH environment variable.
 1. Once you save your changes, be sure to restart your command prompt.
 1. Finally, type `psql -U postgres` on your command line and it should work.
@@ -176,12 +173,42 @@ To enter the postgreSQL shell, type: `psql -U postgres` (connecting as the postg
 |--|--|--|
 | `\q` | Exits the postgres shell | |
 | `\l` | Lists all the available databases | |
-| `\c <dbname> <username>` | Connect to specific database | `\c lab03 postgres` |
+| `\c <dbname> <username>` | Connect to specific database | `\c photo_app_tutorial postgres` |
 | `\dt` | Lists all of the tables in the database you're connected to |
 | `\d <table_name>` | Describes the structure (i.e., "schema") of a table | `\d posts` |
 | `\du` | List all users and their roles | |
 | space bar | If you query data in a table that has multiple pages, the space bar will show you the next set of records.  | |
 | q | If you query data in a table that has multiple pages, and you want to go back to the psql prompt. | |
+
+For instance, to connect to the database you just made, type:
+
+From terminal / command prompt
+```shell
+psql -U postgres
+```
+
+Within psql environment:
+```
+\c photo_app_tutorial
+\dt
+```
+
+Output:
+```
+photo_app_tutorial10=# \dt
+             List of relations
+ Schema |      Name      | Type  |  Owner   
+--------+----------------+-------+----------
+ public | bookmarks      | table | postgres
+ public | comments       | table | postgres
+ public | following      | table | postgres
+ public | likes_comments | table | postgres
+ public | likes_posts    | table | postgres
+ public | posts          | table | postgres
+ public | stories        | table | postgres
+ public | users          | table | postgres
+(8 rows)
+```
 
 Consult <a href="https://www.postgresqltutorial.com/psql-commands/" target="_blank">this guide</a> for more details.
 
@@ -755,21 +782,9 @@ Write a query that displays the `id` and `caption` of every blog post that Nicho
 ```
 
 ## What to turn in
-To submit Lab 3:
+To submit Tutorial 10, upload a zip file with the following two files:
 
-### 1. Push all of your files to GitHub
-Please copy the latest version of your files to GitHub by issuing the following commands:
-
-```shell
-git add .    # to check in your lab03 files
-git commit -m 'Commiting my completed lab03 files'
-git status   # to make sure that all of your files are being tracked
-git push     # sends your files to GitHub
-```
-
-### 2. Paste a link to your repo on Canvas
-Paste a link to your `webdev-labs` GitHub repository into the Canvas textbox for <a href="https://canvas.northwestern.edu/courses/163531/assignments/1055580" target="_blank">Lab 3</a>.
-
-### 3. Answer the following questions
-1. What is a join (just in your own words) and why is it useful?
-2. Consider the structure of the `posts` table: why would you want to use a foreign key (`user_id`) to the `users` table instead of storing the `username`, `first_name`, and `last_name` in the `posts` table?
+1. answers.sql
+1. A text file that answers the following questions:
+    * What is a join (just in your own words) and why is it useful?
+    * Consider the structure of the `posts` table: why would you want to use a foreign key (`user_id`) to the `users` table instead of storing the `username`, `first_name`, and `last_name` in the `posts` table?
