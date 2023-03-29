@@ -63,7 +63,9 @@ Please read the SQL Alchemy section carefully, and try executing some of the sam
 
 Within the **flask shell**, you can interact with any of the data models (described in more detail below).
 
-## Create new Post
+## 1. Create New Objects
+
+Creating a Post resource:
 
 ### SQL
 To create a new record in the `posts` table using SQL, you would issue this command:
@@ -79,7 +81,7 @@ To create a new record in the `posts` table using SQL, you would issue this comm
     )
 ```
 
-### SQLAlchemy
+### Flask SQLAlchemy
 In SQL Alchemy, you create a record just like you would create any object. The only difference is that you have to add and commit the object to the database session:
 
 ```python
@@ -98,8 +100,18 @@ db.session.commit()         # commits the change to the database
 
 Try running the above command using the flask shell (and don't forget the import statement). 
 
-## Simple Queries with <span class="emphasize">FLASK</span> SQL Alchemy
-Just like in SQL, querying operations can be the most complex, as you often want to filter, join, and aggregate data. You will be using the Flask SQL Alchemy library for simple queries (<a href="https://flask-sqlalchemy.palletsprojects.com/en/2.x/queries/" target="_blank">Flask SQL Alchemy documentation here</a>). Please try issuing the commands below using the flask shell:
+## 2. Simple Queries
+Just like in SQL, querying operations can be complex, as you often want to filter, join, and aggregate data. You will be using the Flask SQL Alchemy library for simple queries (<a href="https://flask-sqlalchemy.palletsprojects.com/en/2.x/queries/" target="_blank">Flask SQL Alchemy documentation here</a>). 
+
+### Retrieve all posts
+
+Using SQL:
+
+```sql
+SELECT * FROM posts;
+```
+
+Using **Flask SQLAlchemy** via the flask shell:
 
 ```python
 from models import Post, db
@@ -118,30 +130,89 @@ for post in posts:
         post.user.username, '| # comments:', 
         len(post.comments)
     )
+```
 
-# limit the # of posts:
+### Retrieve the first 10 posts
+
+Using SQL:
+
+```sql
+SELECT * FROM posts LIMIT 10;
+```
+
+Using **Flask SQLAlchemy** via the flask shell:
+
+```python
+from models import Post, db
 posts = Post.query.limit(10).all()
+```
 
+### Retrieve all the posts created by user #5
+
+Using SQL:
+
+```sql
+SELECT * FROM posts WHERE user_id = 5;
+```
+
+Using **Flask SQLAlchemy** via the flask shell:
+
+```python
+from models import Post, db
 # filter the posts (simple):
 posts = Post.query.filter_by(user_id=5).all()
+```
 
+### Retrieve all the posts created by user with a username of "chad_marks"
+```sql
+SELECT * FROM posts
+INNER JOIN users ON
+    posts.user_id = users.id
+WHERE users.username = 'chad_marks';
+```
+
+Using **Flask SQLAlchemy** via the flask shell:
+
+
+```python
+from models import Post, db
 # filter the posts (by attribute of a joined table):
 posts = Post.query.filter(Post.user.has(username='chad_marks')).all()
+```
 
+### Retrieve a single post with id = 5
+
+```sql
+SELECT * FROM posts where id = 5;
+```
+
+Using **Flask SQL Alchemy** via the flask shell:
+
+```python
+from models import Post, db
+# get single post based on primary key (id column):
+post = Post.query.get(5)
+print(post)
+
+```
+
+### Other cool stuff you can do w/SQLAlchemy
+With SQLAlchemy, you can also query related tables via foreign keys. For instance, in the code below, `post.user` queries the users table and `post.comments` queries the comments table:
+
+```python
+from models import Post, db
 # get single post based on primary key (id column):
 post = Post.query.get(5)
 
-print(post)
-
 # get the user of a post (from the users table)
-post.user
+post.user # under the hood, queries the users table for the user_id associated with the post
 
 # get all of the comments on a post (from the comments table)
-post.comments
+post.comments # under the hood, queries for all comments associated with the post
 ```
 
-## Advanced Queries with <span class="emphasize">REGULAR</span> SQL Alchemy
-"Flask SQL Alchemy" also inherits from "SQL Alchemy," so if you're looking to execute more complex queries, consult the regular SQL Alchemy documentation (<a href="https://docs.sqlalchemy.org/en/14/orm/tutorial.html#common-filter-operators" target="_blank">SQL Alchemy documentation here</a>). Some samples of some more complex queries are shown below. Again, you are encouraged to run these commands for yourself using the flask shell:
+## 3. Advanced Queries with <span class="emphasize">REGULAR</span> SQLAlchemy
+"Flask SQLAlchemy" also inherits from "SQLAlchemy," so if you're looking to execute more complex queries, consult the regular SQLAlchemy documentation (<a href="https://docs.sqlalchemy.org/en/14/orm/tutorial.html#common-filter-operators" target="_blank">SQL Alchemy documentation here</a>). Some samples of some more complex queries are shown below. Again, you are encouraged to run these commands for yourself using the flask shell:
 
 ```python
 from models import db, Post, User, Comment, Following
@@ -150,26 +221,130 @@ from sqlalchemy import func
 engine = db.engine
 session = db.session
 
-# 1. query for substring matches using a "like" function:
+##########################################################
+# 1. query for substring matches using a "like" function #
+##########################################################
 posts = Post.query.filter(Post.caption.ilike('%tree%')).all()
+'''
+-- analagous SQL query:
+SELECT *
+FROM posts 
+LEFT OUTER JOIN users 
+    AS users_1 ON users_1.id = posts.user_id 
+WHERE posts.caption ILIKE '%tree%';
+'''
 
-# 2. "in" clause:
+##################
+# 2. "in" clause #
+##################
 # give me all the posts that created by users 3, 4, or 5. 
 posts = Post.query.filter(Post.user_id.in_([3, 4, 5])).all()
+'''
+-- analagous SQL query:
+SELECT *
+FROM posts 
+LEFT OUTER JOIN users 
+    AS users_1 ON users_1.id = posts.user_id 
+WHERE posts.user_id IN (3, 4, 5);
+'''
 
-# 3. "not in" clause:
+######################
+# 3. "not in" clause #
+######################
 # give me all the posts that were NOT created by users 3, 4, or 5. 
-posts = Post.query.filter(~Post.user_id.in_([3, 4, 5])).all()   
+posts = Post.query.filter(~Post.user_id.in_([3, 4, 5])).all()  
+'''
+-- analagous SQL query:
+SELECT *
+FROM posts 
+LEFT OUTER JOIN users 
+    AS users_1 ON users_1.id = posts.user_id 
+WHERE posts.user_id NOT IN (3, 4, 5);
+''' 
 
-# 4. Join: two tables:
+######################################################################
+# 4. get all of the users in my feed (e.g., the users I'm following) #
+######################################################################
+current_user_id = 1
+following = Following.query.filter(Following.user_id==current_user_id).all()
+'''
+-- analagous SQL query:
+SELECT *
+FROM following 
+LEFT OUTER JOIN users 
+    AS users_1 ON users_1.id = following.user_id 
+LEFT OUTER JOIN users AS 
+    users_2 ON users_2.id = following.following_id 
+WHERE following.user_id = 1
+'''
+
+following
+
+# 4a. build a list of all of the User ids that the current user is following:
+user_ids = []
+for result in following:
+    user_ids.append(result.following_id)
+user_ids
+
+# 4b. or like this (using a list comprehension):
+user_ids = [result[0] for result in user_ids_tuples]
+
+#################################################
+# 5. Get all of the posts in a user's news feed #
+#################################################
+# 5a. build a list of authorized users (same as #4):
+current_user_id = 1
+following = Following.query.filter(Following.user_id==current_user_id).all()
+user_ids = [result[0] for result in user_ids_tuples]
+
+# 5.b Add the current user to this user_ids list
+# b/c a user should also be able to see their own posts
+user_ids.append(current_user_id)
+
+# 5.c. Now use the "in" query noted in #2 above to get a list
+# of authorized posts:
+posts = Post.query.filter(Post.user_id.in_(user_ids)).all()
+'''
+-- analagous SQL query:
+SELECT *
+FROM posts 
+LEFT OUTER JOIN users 
+    AS users_1 ON users_1.id = posts.user_id 
+WHERE posts.user_id IN (4, 6, 8, 12, 16, 18, 20, 21, 22, 23, 1);
+'''
+
+posts
+
+
+#######################
+# 6. Join: two tables #
+#######################
+# Sample query: "Give me back the Post and the User object
+# for posts that were authored by someone with the string 'ar'
+# in their username":
+statement = 
 posts = (
     session
         .query(Post, User)
         .join(User, User.id==Post.user_id)
-        .filter(User.username.ilike('%ere%')).all()
+        .filter(User.username.ilike('%ar%')).all()
 )
 
-# 5. Join (three tables) to select particular columns and the comment count:
+'''
+-- analagous SQL query:
+SELECT *
+FROM posts 
+JOIN users ON 
+    users.id = posts.user_id 
+LEFT OUTER JOIN users AS users_1 
+    ON users_1.id = posts.user_id 
+WHERE users.username ILIKE '%ar%';
+'''
+
+#########################
+# 7. Join: three tables #
+#########################
+# "List the post, author, and number of comments per post":
 # Note that an "outer join" is needed on the comments table in the
 # event that a post has no comments.
 posts = (
@@ -180,19 +355,25 @@ posts = (
         .group_by(Post.id, User.username)
         .all()
 )
+'''
+-- analagous SQL query:
+SELECT posts.id AS posts_id, users.username AS users_username, count(comments.id) AS count_1 
+FROM posts 
+JOIN users ON 
+    users.id = posts.user_id 
+LEFT OUTER JOIN comments ON 
+    posts.id = comments.post_id 
+GROUP BY posts.id, users.username;
+'''
 
-# 6. Get ids of all the users I'm following:
-user_ids_tuples = (
-    session
-        .query(Following.following_id)
-        .filter(Following.user_id == 5)
-        .order_by(Following.following_id)
-        .all()
-)
-user_ids = [id for (id,) in user_ids_tuples]
+############################################
+# 8. You can also issue raw SQL statements #
+############################################
 
-# 7. Raw SQL query example for more complex queries...
+# Raw SQL query example for more complex queries...
 # The query below returns the post_id, username, # of comments, # of likes for every post:
+from sqlalchemy import text
+
 sql = '''
 SELECT posts.id AS post_id, users.username AS username,  
     count(distinct comments.id) AS comment_count,
@@ -206,12 +387,32 @@ LEFT OUTER JOIN likes_posts ON
     posts.id = likes_posts.post_id 
 GROUP BY posts.id, users.username;
 '''
-with engine.connect() as con:
-    posts = list(con.execute(sql))
+with db.engine.connect() as conn:
+    posts = list(conn.execute(text(sql)))
 ```
 
-## Update Post
-Here is an example of how you might update a post:
+## 4. Update Objects
+Updating a Post resource:
+
+### SQL
+To update one or more resources in SQL, you need to specify:
+
+1. The table,
+2. The columns you would like to change (and their new values), and
+3. A WHERE clause indicating which records you'd like to change
+{:.compact}
+
+```sql
+UPDATE posts 
+SET image_url = 'https://picsum.photos/600/430?id=443',
+    caption = 'Updated caption',
+    alt_text = 'Updated alt text'
+WHERE id=6;
+```
+
+### Flask SQLAlchemy
+In SQLAlchemy, you update the object (like you would any Python object) and then commit the change to the database:
+
 ```python
 from models import Post, db
 
@@ -225,8 +426,21 @@ post.alt_text = 'Updated alt text'
 db.session.commit() 
 ```
 
-## Delete Post
-And here is an example of how you might delete a post:
+## 5. Delete Objects
+Deleting a Post resource:
+
+
+### SQL
+To delete one or more records in a table using SQL, 
+you specify the table and the WHERE clause:
+
+```sql
+DELETE FROM posts WHERE id=5;
+```
+
+### Flask SQLAlchemy
+In SQLAlchemy, you specify the query matching the items you want to delete, and then invoke the `delete()` method:
+
 ```python
 from models import Post, db
 
@@ -235,5 +449,22 @@ db.session.commit()
 
 post = Post.query.get(5) # should return None
 ```
+
+
+## 6. Challenge Problems
+
+1. Write a query that shows all of the posts liked by User #3
+1. Write a query that shows all of the posts bookmarked by User #3
+1. Write a query that shows all of the posts in User #3's feed (we've already gone over this, but see if you can write it again from scratch -- as you'll need to do it for HW7)
+1. Write a query that creates a new Like entry reflecting that User #3 likes Post #10. Verify that it works (see #1).
+1. Write a query that creates a new Bookmark entry reflecting that User #3 bookmarked Post #10
+1. Delete the new Bookmark entry you just created.
+{:.compact}
+
+
+
+
+
+
 
 Nice job issuing those SQL Alchemy queries! It just takes some practice to get the hang of interacting with your database using the ORM syntax.

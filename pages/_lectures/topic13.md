@@ -31,3 +31,16 @@ due_date: 2023-04-03
 ### Python Decorators
 * <a href="https://realpython.com/primer-on-python-decorators/" target="_blank">Primer on Python Decorators</a>
 {:.compact}
+
+## Slides
+Slides will be posted before class
+
+## Videos & Lecture Files
+Videos and worked examples will be published after class:
+* <a href="https://drive.google.com/drive/folders/1b0RGogU8P2rKJAtcRpxMspHB919GUAXT?usp=sharing" target="_blank">Videos on Google Drive</a>
+* <a href="https://github.com/vanwars/csci344" target="_blank">Worked examples on GitHub</a>
+
+
+## Activities
+1. Lecture 21 (Monday): [SQL Alchemy & Object-Relational Mapping](../activities/intro-sql-alchemy)
+1. Lecture 22 (Wednesday): Flask RESTful and Python Decorators
