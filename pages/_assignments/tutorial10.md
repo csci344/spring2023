@@ -24,7 +24,7 @@ due_date: 2023-03-31
     }
 </style>
 
-## 1. Introduction
+## Introduction
 
 {:.blockquote-no-margin}
 > ### Overview 
