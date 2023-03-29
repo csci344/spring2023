@@ -19,7 +19,7 @@ due_date: 2023-03-29
 {:.compact}
 
 ## Slides
-Slides will be posted before class
+* Lecture 20: <a href="https://docs.google.com/presentation/d/1grql4XbDbsYlwjeMrAztEX4-DkXk37_qCcg5RA1Rhew/edit?usp=sharing" target="_blank">Intro to Relational Databases</a>
 
 ## Videos & Lecture Files
 Videos and worked examples will be published after class:
