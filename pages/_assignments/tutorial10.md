@@ -115,7 +115,7 @@ In order to complete today's lab, you will need to install PostgreSQL on your la
 
 * Download tutorial10.zip (above) and unzip it, and move it into your `csci344/tutorials` folder / git repo.
 * Follow the procedure outlined in <a href="https://www.postgresqltutorial.com/load-postgresql-sample-database/" target="_blank">these instructions</a>, but make the following modifications:
-    * Create a database called `photo_app_tutorial`, using either the command line interface or the PGAdmin GUI interface.
+    * Create a database called `tutorial10`, using either the command line interface or the PGAdmin GUI interface.
     * Load the `tutorial10.tar` (in the tutorial10 folder you just downloaded) into the empty `tutorial10` database (to create the table structure and table data).
 
 <!-- pg_dump -U postgres -p 5432 -Ft photo-app > ~/Desktop/tutorial10.tar
@@ -136,12 +136,12 @@ Note: you only have to do this if the `psql -U postgres` command was NOT recogni
 1. Find the location of your `psql` executable on your computer by searching for `psql`. Make a note of where it is (for Sarah, it's located at `/Library/PostgreSQL/15/bin/psql`)
 1. Open a Terminal window. Figure out which shell you're using by typing `echo $SHELL` at the command prompt.
 1. Depending on the shell version you're using, open *one* of the files below (in your home directory) in a text editor:
-    * for bash, edit one of these:
-        * `~/.bashrc`
-        * `~/.bash_profile` 
     * for zsh edit one of these:
         * `~/.zshrc`
         * `~/.zprofile`
+    * for bash, edit one of these:
+        * `~/.bashrc`
+        * `~/.bash_profile` 
 
 1. In the file you just opened, add the following line:<br>`PATH=$PATH:/Library/PostgreSQL/15/bin` (but use ***your*** bin/psql path) to the end.
 1. Source the file you just edited by typing `source ~/.bashrc` (or whatever file you just edited). This will load your updated path variable and make it accessible to your shell.
@@ -157,9 +157,13 @@ You can read more about each shell here:
 Note: you only have to do this if the `psql -U postgres` command was NOT recognized on your command prompt.
 Follow <a href="https://sqlbackupandftp.com/blog/setting-windows-path-for-postgres-tools" target="_blank">this tutorial</a>. Notes:
 1. You will first need to find where your PostgreSQL bin has been installed on your computer. Should be something like: `C:\Program Files\PostgreSQL\15\bin`
-1. Once you do, you will append the path to your PostgreSQL bin to your PATH environment variable.
+1. Once you do, you will append the path to your PostgreSQL bin to your PATH environment variable. <a href="https://www.mathworks.com/matlabcentral/answers/94933-how-do-i-edit-my-system-path-in-windows" target="_blank">Here is how to do this</a>.
 1. Once you save your changes, be sure to restart your command prompt.
 1. Finally, type `psql -U postgres` on your command line and it should work.
+
+After you have configured your database, your `tutorial10` database should have the following structure:
+
+<img class="large" src="/spring2023/assets/images/tutorials/tutorial10/schema.svg" />
 
 {:#sql}
 ## 3. Walkthrough of SQL Commands
@@ -171,7 +175,7 @@ To enter the postgreSQL shell, type: `psql -U postgres` (connecting as the postg
 {:.admin}
 | Command | Explanation | Example |
 |--|--|--|
-| `\q` | Exits the postgres shell | |
+| `\q` | Exits the psql shell | |
 | `\l` | Lists all the available databases | |
 | `\c <dbname> <username>` | Connect to specific database | `\c photo_app_tutorial postgres` |
 | `\dt` | Lists all of the tables in the database you're connected to |
