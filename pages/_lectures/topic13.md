@@ -33,7 +33,7 @@ due_date: 2023-04-03
 {:.compact}
 
 ## Slides
-Slides will be posted before class
+* Lecture 21: <a href="https://docs.google.com/presentation/d/1ECRnFqjdc7i6z25EnpUbcLF_LQn3A8oOSrACdWT3FIA/edit?usp=sharing" target="_blank">Intro to Object Relational Mappings with SQLAlchemy</a>
 
 ## Videos & Lecture Files
 Videos and worked examples will be published after class:
