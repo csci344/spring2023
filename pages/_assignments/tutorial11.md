@@ -182,6 +182,4 @@ Recall (from HW7 instructions) that the Post resource should contain data about 
 
 ## What to turn in
 
-Please submit your `views/post.py` file to Moodle. 
-* If you relied on any other helper functions / methods in any other python file, include those as well.
-* If you worked with a partner, list your partner.
+Please submit a link to your GitHub repository to the Moodle. The repository should include your hw07 folder, which should include the code that you wrote for `views/posts.py`.
