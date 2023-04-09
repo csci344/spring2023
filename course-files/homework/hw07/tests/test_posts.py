@@ -45,7 +45,7 @@ class TestPostListEndpoint(unittest.TestCase):
 
     def test_posts_get_is_authorized(self):
         authorized_user_ids = utils.get_authorized_user_ids(self.current_user.get('id'))
-        response = requests.get(root_url + '/api/posts?limit=50')
+        response = requests.get(root_url + '/api/posts')
         self.assertEqual(response.status_code, 200)
         posts = response.json()
         for post in posts:
