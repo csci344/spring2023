@@ -35,6 +35,7 @@ due_date: 2023-04-03
 ## Slides
 * Lecture 21: <a href="https://docs.google.com/presentation/d/1ECRnFqjdc7i6z25EnpUbcLF_LQn3A8oOSrACdWT3FIA/edit?usp=sharing" target="_blank">Intro to Object Relational Mappings with SQLAlchemy</a>
 * Lecture 22: <a href="https://docs.google.com/presentation/d/1FiHA7Y78guwq2s2cQSUnAnHdACRaHYaaX5XNkQ_UBPU/edit?usp=sharing" target="_blank">Intro to MVC and Flask RESTful</a>
+* Lecture 23: <a href="https://docs.google.com/presentation/d/14nNLeDkjs_Jstg-rk9x_DBhAXjAjBsBB5e9Qw0SCkS0/edit?usp=sharing" target="_blank">Decorators</a>
 
 ## Videos & Lecture Files
 Videos and worked examples will be published after class:
@@ -45,3 +46,4 @@ Videos and worked examples will be published after class:
 ## Activities
 1. Lecture 21 (Monday): [SQL Alchemy & Object-Relational Mapping](../activities/intro-sql-alchemy)
 1. Lecture 22 (Wednesday): Flask RESTful and Python Decorators (HW7 Walkthrough)
+1. Lecture 23 (Monday): [Intro to Decorators](/spring2023/course-files/lectures/lecture23.zip)
