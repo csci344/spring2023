@@ -16,7 +16,8 @@ due_date: 2023-04-12
 * <a href="https://www.youtube.com/watch?v=eHqbh0kyRYk" target="_blank">CSRF Explained | Understanding Cross Site Request Forgery | What is XSRF?</a>
 
 ## Slides
-Slides will be posted before lecture
+* Lecture 24: <a href="https://docs.google.com/presentation/d/1nTGnWc-e6l6B5SmG-4C6eHM2weUQEzy8gBkiJaYRB8I/edit?usp=sharing" target="_blank">Authentication</a> (Wednesday, 4/12)
+* Lecture 25: Security; Getting Started with Flask JWTs (Monday, 4/17)
 
 ## Videos & Lecture Files
 Videos and worked examples will be published after class:
