@@ -8,26 +8,25 @@ points: 6
 num: 13
 due_date: 2023-04-21
 ---
-**Credits & Kudos**: 
-
-{:.compact}
-* Cooper Barth wrote the original WebSockets lab using Node.js
-* Victoria Chávez designed the accessibility features
-* Sarah adapted it to work with Python
-
-> ## Updates
-> If you can't get your local chat server working, use the course chat server, which can be accessed here: <a href="wss://chat-server-cs396.herokuapp.com/">wss://chat-server-cs396.herokuapp.com</a>
-
 
 {:.blockquote-no-margin}
-> ## Background Readings
-> * <a href="https://stackoverflow.blog/2019/12/18/websockets-for-fun-and-profit/" target="_blank">WebSockets for fun and profit</a> (a nice, concise overview)
-> * <a href="https://www.ably.io/topic/websockets" target="_blank">A conceptual overview of WebSockets</a> (a longer, more detailed overview)
-> * <a href="https://websockets.readthedocs.io/en/latest/index.html" target="_blank">The websockets library (Python)</a>
-> * <a href="https://www.youtube.com/watch?v=SfQd1FdcTlI" target="_blank">Demo using websockets and Python</a>
-> * <a href="https://timwright.org/blog/2017/02/18/using-aria-live-regions/" target="_blank">Using Aria Live Regions</a>
-> * <a href="https://gaurav5430.medium.com/quick-accessibility-wins-multiple-aria-live-on-single-action-caveat-b79a6f41e7cc" target="_blank">Assertive clears queue</a>
-> * <a href="https://github.com/w3c/aria/issues/1689" target="_blank">Mac Screenreader bugs</a>
+> **Credits & Kudos**: 
+> * Cooper Barth wrote the original WebSockets tutorial using Node.js
+> * Victoria Chávez designed the accessibility features
+> * Sarah adapted it to work with Python
+> {:.compact}
+
+## Background Readings
+### Web Sockets
+* <a href="https://stackoverflow.blog/2019/12/18/websockets-for-fun-and-profit/" target="_blank">WebSockets for fun and profit</a> (a nice, concise overview)
+* <a href="https://www.ably.io/topic/websockets" target="_blank">A conceptual overview of WebSockets</a> (a longer, more detailed overview)
+* <a href="https://websockets.readthedocs.io/en/latest/index.html" target="_blank">The websockets library (Python)</a>
+* <a href="https://www.youtube.com/watch?v=SfQd1FdcTlI" target="_blank">Demo using websockets and Python</a>
+
+### Accessibility Resources
+* <a href="https://timwright.org/blog/2017/02/18/using-aria-live-regions/" target="_blank">Using Aria Live Regions</a>
+* <a href="https://gaurav5430.medium.com/quick-accessibility-wins-multiple-aria-live-on-single-action-caveat-b79a6f41e7cc" target="_blank">Assertive clears queue</a>
+* <a href="https://github.com/w3c/aria/issues/1689" target="_blank">Mac Screenreader bugs</a>
 
 Until now, we've been using the HTTP protocol to send messages between a user's client at the server. Using HTTP, clients must initiate individual connections to the server in order to request and receive data.
 
@@ -56,13 +55,13 @@ Note that the server and the client don't have to be on the same machine (and fu
 
 ## 1. Setup Your Files and Local Server
 
-<a class="nu-button" style="margin-top:20px;display:inline-block;" href="/spring2023/course-files/tutorials/tutorial13.zip">lab09.zip<i class="fas fa-download" aria-hidden="true"></i></a>
+<a class="nu-button" style="margin-top:20px;display:inline-block;" href="/spring2023/course-files/tutorials/tutorial13.zip">tutorial13.zip<i class="fas fa-download" aria-hidden="true"></i></a>
 
 ### 1. Organize files
-1. Download the `lab09.zip` file and unzip it. You should see the following files:
+1. Download the `tutorial13.zip` file and unzip it. You should see the following files:
 
 ```bash
-lab09
+tutorial13
 ├── client
 │   ├── client.js
 │   ├── index.css
@@ -75,7 +74,7 @@ lab09
 ```
 
 ### 2. Set Up Your Virtual Environment
-Open the terminal and navigate to the `server` directory inside your `lab09` directory. Then, set up a virtual environment and install the dependencies as follows (depending on your operating system):
+Open the terminal and navigate to the `server` directory inside your `tutorial13` directory. Then, set up a virtual environment and install the dependencies as follows (depending on your operating system):
 
 #### For Mac, Unix, Linux, or GitBash
 
@@ -120,9 +119,35 @@ async def respond_to_message(websocket, message):
 
 Your job is to edit the `app.py` code to handle the three different types of JSON messages shown below. These data formats are abitrary -- we just made them up as reasonable ways to send login, disconnect, and chat information. You could set these messages up however you want, but we just made some decisions here about how to do things:
 
-1. **Login**: `{ "type": "login", "user_joined": "walter", "active_users": ["walter", "maria", "laura"] }`
-1. **Disconnect**: `{ "type": "login", "user_left": "walter", "active_users": ["maria", "laura"] }`
-1. **Chat**: `{ "type": "chat", "text": "is this working?", "username": "my_username" }`
+### 1. Login
+
+```json
+{ 
+    "type": "login", 
+    "user_joined": "walter", 
+    "active_users": ["walter", "maria", "laura"] 
+}
+```
+
+### 2. Disconnect
+
+```json
+{ 
+    "type": "login", 
+    "user_left": "walter", 
+    "active_users": ["maria", "laura"] 
+}
+```
+
+### 3. Chat
+
+```json
+{ 
+    "type": "chat", 
+    "text": "is this working?", 
+    "username": "my_username" 
+}
+```
 
 You will handle each of these messages according to the specifications outlined below:
 
@@ -143,7 +168,7 @@ Then, send the following message back to each client:
 }
 ```
 
-You can test this by opening `lab09/client/index.html` in your web browser, clicking the "Connect" and "Set Name" buttons (and also providing a username), and seeing if you get the correct JSON output in the browser console.
+You can test this by opening `tutorial13/client/index.html` in your web browser, clicking the "Connect" and "Set Name" buttons (and also providing a username), and seeing if you get the correct JSON output in the browser console.
 
 ### 2. Disconnect
 If the `data.type` is "disconnect", removed the user from the logged_in_users dictionary. 
@@ -162,7 +187,7 @@ Then, send the following message back to each client:
 }
 ```
 
-You can test this by opening `lab09/client/index.html` in a second browser tab and clicking the "Connect" and "Set Name" buttons (and also providing a username). Then, close the browser tab you just opened. Now go back to your first browser tab and look at the console. You should see a messages in the console indicating that a user both connected and then disconnected from the chat server.
+You can test this by opening `tutorial13/client/index.html` in a second browser tab and clicking the "Connect" and "Set Name" buttons (and also providing a username). Then, close the browser tab you just opened. Now go back to your first browser tab and look at the console. You should see a messages in the console indicating that a user both connected and then disconnected from the chat server.
 
 ### 3. Chat
 If the `data.get('type')` is "chat", just send the `data` object to each client (no processing needed). You can test this by sending a chat message in the client and then seeing if you get the correct JSON output in the browser console.
@@ -207,7 +232,7 @@ If data.type is "chat", append the chat message to the `#chat` div (main panel) 
 
 If your client and server are both working, you should be able to open `index.html` in two separate browser tabs, log in to the same server on each, and send messages between them (see video below)!
 
-<img class="large frame" style="width:100%;" src="/spring2023/assets/images/tutorials/tutorial13/lab-8-demo.gif" />
+<img class="large frame" style="width:100%;" src="/spring2023/assets/images/tutorials/tutorial13/tutorial13-demo.gif" />
 
 ## 4. Accessibility
 It is important to think about how low-vision or blind users might interact with a chat app. Specifically:
