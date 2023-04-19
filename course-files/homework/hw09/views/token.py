@@ -6,35 +6,23 @@ import json
 from datetime import timezone, datetime, timedelta
 
 class AccessTokenEndpoint(Resource):
-
+    # Your Job:
     # Create a route to authenticate your users and return JWT Token. The
     # create_access_token() function is used to actually generate the JWT.
     def post(self):
         body = request.get_json() or {}
-        username = body.get('username')
-        password = body.get('password')
-        
-        # Query your database for username and password
-        user = User.query.filter_by(username=username).first()
-        if user is None:
-            # the user was not found on the database
-            return Response(json.dumps({"msg": "Bad username"}), mimetype="application/json", status=401)
-        
-        if user.check_password(password):
-            # create a new token with the user id inside
-            access_token = flask_jwt_extended.create_access_token(identity=user.id)
-            refresh_token = flask_jwt_extended.create_refresh_token(identity=user.id)
-            return Response(json.dumps({ 
-                "access_token": access_token, 
-                "refresh_token": refresh_token
-            }), mimetype="application/json", status=200)
-        else:
-            # bad password
-            return Response(json.dumps({"msg": "Bad password"}), mimetype="application/json", status=401)
+        print(body)
+        '''
+        if a matching user is found in the DB, encode the user's id in the JWT
+        access and refresh token as follows:
+        access_token = flask_jwt_extended.create_access_token(identity=user.id)
+        refresh_token = flask_jwt_extended.create_refresh_token(identity=user.id)
+        '''
+        return 'Implement me!'
 
 
 class RefreshTokenEndpoint(Resource):
-    
+    # done for you :). 
     def post(self):
         body = request.get_json() or {}
         refresh_token = body.get('refresh_token')

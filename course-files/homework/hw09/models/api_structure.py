@@ -2,6 +2,7 @@ import json
 from models import Post, Comment, Bookmark, Following, db, LikePost
 from views import get_authorized_user_ids
 import flask_jwt_extended
+from sqlalchemy import text
 
 class ApiNavigator(object):
     def __init__(self, current_user):
@@ -39,7 +40,8 @@ class ApiNavigator(object):
             )
             LIMIT 1
         '''.format(user_id=self.current_user.id)
-        rows = list(db.engine.execute(sql))
+        with db.engine.connect() as conn:
+            rows = list(conn.execute(text(sql)))
         return rows[0][0]
 
     def get_unbookmarked_post_id(self):
@@ -60,7 +62,8 @@ class ApiNavigator(object):
                 user_id=self.current_user.id,
                 authorized_user_ids=', '.join([str(id) for id in ids])
             )
-        rows = list(db.engine.execute(sql))
+        with db.engine.connect() as conn:
+            rows = list(conn.execute(text(sql)))
         return rows[0][0]
 
 
@@ -82,7 +85,8 @@ class ApiNavigator(object):
                 user_id=self.current_user.id,
                 authorized_user_ids=', '.join([str(id) for id in ids])
             )
-        rows = list(db.engine.execute(sql))
+        with db.engine.connect() as conn:
+            rows = list(conn.execute(text(sql)))
         return rows[0][0]
 
     def get_endpoints(self):
