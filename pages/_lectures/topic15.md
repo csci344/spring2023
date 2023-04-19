@@ -15,9 +15,7 @@ due_date: 2023-04-19
 * <a href="https://websockets.readthedocs.io/en/latest/intro/tutorial1.html" target="_blank">How to make a Connect Four game using HTML, CSS, JavaScript, and the websockets Python library</a>.
 
 ## Slides
-Slides will be posted before class.
-
-<!-- * Lecture 26: <a href="https://docs.google.com/presentation/d/1z5IdDNLav11EIfFYGv9tJXnJjwSsIpTN7-pVE11Fgi0/edit?usp=sharing" target="_blank">Web Sockets</a> (Wednesday, 4/19) -->
+* Lecture 26: <a href="https://docs.google.com/presentation/d/1z5IdDNLav11EIfFYGv9tJXnJjwSsIpTN7-pVE11Fgi0/edit?usp=sharing" target="_blank">Web Sockets</a> (Wednesday, 4/19)
 
 ## Videos & Lecture Files
 Videos and worked examples will be published after class:
@@ -25,5 +23,4 @@ Videos and worked examples will be published after class:
 * <a href="https://github.com/vanwars/csci344" target="_blank">Worked examples on GitHub</a>
 
 ## Activities
-Activity will be posted before lecture.
-<!-- 1. Lecture 26 (Wednesday): [Web Sockets Exercises](/spring2023/course-files/lectures/lecture26.zip) -->
+1. Lecture 26 (Wednesday): [Web Sockets Exercises](/spring2023/course-files/lectures/lecture26.zip)

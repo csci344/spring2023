@@ -6,6 +6,7 @@ async def listen():
 
     async with websockets.connect(url) as ws:
         await ws.send('Hello, Server!')
+        await ws.send('How are you!?')
         while True:
             message = await ws.recv()
             print(message)

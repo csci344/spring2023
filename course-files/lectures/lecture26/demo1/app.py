@@ -1,4 +1,8 @@
-# To test: python3 -m websockets ws://localhost:8081/
+# To test on the command line: 
+#   Mac:        python3 -m websockets ws://localhost:8081/
+#   Mac:        python -m websockets ws://localhost:8081/
+#   Windows:    py -m websockets ws://localhost:8081/
+
 import asyncio
 import websockets
 
@@ -7,15 +11,11 @@ PORT = 8081
 
 async def echo(websocket):
     print('A client just connected.')
-    try:
-        # asynchronous loop
-        async for message in websocket:
-            print('received message from client:', message)
-            await websocket.send('Pong: ' + message)
-
-    except websockets.ConnectionClosed as e:
-        print('A client just disconnected')
-        print(e)
+    
+    # asynchronous loop
+    async for message in websocket:
+        print('received message from client:', message)
+        await websocket.send('Pong: ' + message)
 
 
 async def main():
