@@ -17,13 +17,6 @@ async def echo(websocket):
         print('A client just disconnected')
         print(e)
 
-# async def echo(websocket):
-#     print('A client just connected.')
-#     # asynchronous loop
-#     async for message in websocket:
-#         print('received message from client:', message)
-#         await websocket.send('Pong: ' + message)
-
 
 async def main():
     async with websockets.serve(echo, "", PORT):
