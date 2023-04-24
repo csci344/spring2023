@@ -13,9 +13,7 @@ due_date: 2023-04-24
 * <a href="https://www.youtube.com/watch?v=Uo3cL4nrGOk" target="_blank">Interview with Senior JS Developer</a> (Parody)
 
 ## Slides
-Slides will be posted before class
-
-<!-- * Lecture 27: <a href="https://docs.google.com/presentation/d/1kq7Kc12AQqu01rErihQrhivq74lFPkr4Ig1VyV5esiM/edit?usp=sharing" target="_blank">Course Recap</a> (Monday, 4/24) -->
+* Lecture 27: <a href="https://docs.google.com/presentation/d/1kq7Kc12AQqu01rErihQrhivq74lFPkr4Ig1VyV5esiM/edit?usp=sharing" target="_blank">Course Recap</a> (Monday, 4/24)
 
 ## Videos & Lecture Files
 Videos and worked examples will be published after class:
