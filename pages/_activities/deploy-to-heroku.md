@@ -120,7 +120,7 @@ FLASK_APP=app.py
 # DB_URL=postgresql://postgres:12345@localhost/photo-app
 
 # Add cloud database string:
-DB_URL=postgresql://vqwckqdllbhfsj:atxgo7m288v@ec2-34-205-209-14.compute-1.amazonaws.com:5432/dbintgo7m2v4vl
+DB_URL=postgresql://some_username:some_password@ec2-34-205-209-14.compute-1.amazonaws.com:5432/some_database
 
 JWT_SECRET=MY_SECRET
 
