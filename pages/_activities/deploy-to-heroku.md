@@ -48,13 +48,13 @@ On Mac, people had to install XCode Tools
 <a href="https://www.heroku.com/about" target="_blank">Heroku</a> is a container-based cloud Platform as a Service (PaaS) that is owned by Salesforce. You can use Heroku to publish many different kinds of web development projects (not just Python, Node, React, etc.). Essentially, Heroku allows you to configure a virtual computer on someone else's machine, and then save and run your files there. The basic process is as follows:
 1. [Create a new Heroku app](#create) (i.e. "dyno")
 1. [Create a hosted database](#db) (a cloud version of your database)
-1. [Configure your app](#configure) -- by create a few different configuration files and variables that tell your Heroku instance what software packages to install (e.g. Flask, SQL Alchemy, etc.). Specifically:
-    * Create a `requirements.txt` to install python packages
+1. [Configure your app](#configure) -- by create a few different configuration files and variables. Specifically:
+    * Create a `requirements.txt` file (for installing python packages)
     * Create a `Procfile` to tell Heroku that we want to run a Flask web server using <a href="https://devcenter.heroku.com/articles/python-gunicorn" target="_blank">Gunicorn</a>
+    * Create a `package.json` file to teach Heroku how to compile your React app.
     * Set some environment variables that tell Heroku how to access your database and JWT Secret
     {:.compact}
-1. Add a configuration file to your React App.
-1. Deploy your app by downloading and configuring the Heroku Command Line Interface (CLI), which is used in combination with git to deploy an app to Heroku.
+1. Deploy your app by downloading and configuring the Heroku Command Line Interface (CLI). Heroku's CLI, in combination with git, helps you send your files to Heroku.
 
 Heroku also has support for hosting PostgreSQL databases, which is a free service if you register as a student. Also, if you have the free version, it goes to sleep if it hasn't been used for a while. So the first time you access your Heroku website, it's a little slow.
 
