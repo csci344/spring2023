@@ -1,6 +1,6 @@
 ---
 layout: module
-title: "Course Reflection"
+title: "Course Reflection & Deployment to the Cloud"
 type: module
 num: 15
 draft: 0
@@ -22,3 +22,6 @@ Videos and worked examples will be published after class:
 * <a href="https://drive.google.com/drive/folders/1b0RGogU8P2rKJAtcRpxMspHB919GUAXT?usp=sharing" target="_blank">Videos on Google Drive</a>
 * <a href="https://github.com/vanwars/csci344" target="_blank">Worked examples on GitHub</a>
 
+
+## Activity
+* [Deploying to Heroku](../activities/deploy-to-heroku)
