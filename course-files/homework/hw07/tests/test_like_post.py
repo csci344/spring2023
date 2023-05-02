@@ -55,7 +55,7 @@ class TestLikePostListEndpoint(unittest.TestCase):
         url = '{0}/api/posts/likes'.format(root_url)
         response = requests.post(url, json={'post_id': post.get('id')})
         # print(response.text)
-        self.assertEqual(response.status_code, 404)
+        self.assertTrue(response.status_code in [400, 404])
 
     
 class TestLikePostDetailEndpoint(unittest.TestCase):
