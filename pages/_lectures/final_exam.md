@@ -2,7 +2,7 @@
 layout: two-column
 title: "Final Exam"
 type: exam
-draft: 1
+draft: 0
 due_date: 2023-05-03
 ---
 
