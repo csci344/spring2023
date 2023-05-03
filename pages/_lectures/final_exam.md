@@ -27,7 +27,6 @@ due_date: 2023-05-03
 
 </style>
 
-## Final Exam
 
 <a href="https://docs.google.com/document/d/1y7V0SDRPNPitY9c996yZQRE-c67gF0xP2inWimVMzlE/edit#heading=h.7ytmb9btwy87" target="_blank" class="button">Final Exam Instructions</a>
  
